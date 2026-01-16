@@ -17,12 +17,12 @@
               "criteria": [
                 {
                   "code": "FR1.1.1",
-                  "text": "The company is confrmed to be:a) an incorporated business entityb) in operation for at least 12 monthsc) generating a majority of revenue from a competitive market.",
+                  "text": "The company is confrmed to be:\na) an incorporated business entity\nb) in operation for at least 12 months\nc) generating a majority of revenue from a competitive market.",
                   "guidance": ""
                 },
                 {
                   "code": "FR1.1.2",
-                  "text": "The company does not fall into any of the following categories.a) Business divisions, brands, or units, or businesses that are not complete and distinct from their parent or group of affliatesb) Franchisors who do not own a majority of global franchisee locations, or franchisors without geographic distinction from independentfranchiseesc) Non-profts or Civil Society Organizations (CSOs), foundations, or charitable entities, unless otherwise approved by B Labd) Governments, government agencies, government ministries, or state-owned enterprises, unless otherwise approved by B Labe) Company legally registered in regions not covered operationally by B Lab and not part of a larger group registered in a region covered byB Lab",
+                  "text": "The company does not fall into any of the following categories.\na) Business divisions, brands, or units, or businesses that are not complete and distinct from their parent or group of affliates\nb) Franchisors who do not own a majority of global franchisee locations, or franchisors without geographic distinction from independentfranchisees\nc) Non-profts or Civil Society Organizations (CSOs), foundations, or charitable entities, unless otherwise approved by B Lab\nd) Governments, government agencies, government ministries, or state-owned enterprises, unless otherwise approved by B Lab\ne) Company legally registered in regions not covered operationally by B Lab and not part of a larger group registered in a region covered byB Lab",
                   "guidance": ""
                 }
               ]
@@ -33,7 +33,7 @@
               "criteria": [
                 {
                   "code": "FR1.2.1",
-                  "text": "The company generates less than 1% of annual revenue from causing or contributing to the impacts on affected stakeholders of the listedindustries:a) Fossil fuel producersb) Gamblingc) Pornographyd) Prisons and detention centers (including prison or detention center labor)e) Tobaccof) Weapons",
+                  "text": "The company generates less than 1% of annual revenue from causing or contributing to the impacts on affected stakeholders of the listedindustries:\na) Fossil fuel producers\nb) Gambling\nc) Pornography\nd) Prisons and detention centers (including prison or detention center labor)\ne) Tobacco\nf) Weapons",
                   "guidance": ""
                 },
                 {
@@ -75,12 +75,12 @@
               "criteria": [
                 {
                   "code": "FR1.4.1",
-                  "text": "The company shares accurate and complete information by:a) using credible evidence and data sourceb) having a clear understanding of B Lab’s resources.",
+                  "text": "The company shares accurate and complete information by:\na) using credible evidence and data source\nb) having a clear understanding of B Lab’s resources.",
                   "guidance": ""
                 },
                 {
                   "code": "FR1.4.2",
-                  "text": "The company shares accurate and complete information at all times:a) in its B Impact Assessmentb) in providing information to assurance providers authorized by B Labc) in all communications with B Lab personnel.",
+                  "text": "The company shares accurate and complete information at all times:\na) in its B Impact Assessment\nb) in providing information to assurance providers authorized by B Lab\nc) in all communications with B Lab personnel.",
                   "guidance": ""
                 },
                 {
@@ -138,7 +138,7 @@
                 },
                 {
                   "code": "FR2.1.2",
-                  "text": "If the company cannot adopt a stakeholder governance legal form because of local laws, it signs the B Corp Agreement and commits to:a) working with B Lab to determine the appropriate legal pathwayb) advocating for beneft corporation legislation in its jurisdictionc) amending its formation documents or adopting a new legal form if one is enacted through local lawmaking.",
+                  "text": "If the company cannot adopt a stakeholder governance legal form because of local laws, it signs the B Corp Agreement and commits to:\na) working with B Lab to determine the appropriate legal pathway\nb) advocating for beneft corporation legislation in its jurisdiction\nc) amending its formation documents or adopting a new legal form if one is enacted through local lawmaking.",
                   "guidance": ""
                 },
                 {
@@ -182,7 +182,7 @@
               "criteria": [
                 {
                   "code": "PSG1.1.1",
-                  "text": "The company establishes a purpose statement which:a) sets out the specifc positive and meaningful impact the company intends to make on society or the environment, or bothb) has business relevance and is integrated into its strategyc) is publicly available on the company’s webpaged) is approved by the company’s highest governing body.",
+                  "text": "The company establishes a purpose statement which:\na) sets out the specifc positive and meaningful impact the company intends to make on society or the environment, or both\nb) has business relevance and is integrated into its strategy\nc) is publicly available on the company’s webpage\nd) is approved by the company’s highest governing body.",
                   "guidance": ""
                 }
               ]
@@ -209,7 +209,7 @@
                 },
                 {
                   "code": "PSG2.1.3",
-                  "text": "The following stakeholders are represented with one or more engagement mechanisms.a) Workers of the company or its subsidiariesb) Suppliersc) Customersd) Investorse) The community where offces or facilities of the company, its subsidiaries, its suppliers, or its investments are locatedf) The local or global environment",
+                  "text": "The following stakeholders are represented with one or more engagement mechanisms.\na) Workers of the company or its subsidiaries\nb) Suppliers\nc) Customers\nd) Investors\ne) The community where offces or facilities of the company, its subsidiaries, its suppliers, or its investments are located\nf) The local or global environment",
                   "guidance": ""
                 }
               ]
@@ -231,7 +231,7 @@
                 },
                 {
                   "code": "PSG3.1.2",
-                  "text": "The grievance procedure explains:a) grounds for accepting a grievanceb) grievance process steps and targeted deadlines for managing a grievancec) how a resolution is facilitated",
+                  "text": "The grievance procedure explains:\na) grounds for accepting a grievance\nb) grievance process steps and targeted deadlines for managing a grievance\nc) how a resolution is facilitated",
                   "guidance": ""
                 },
                 {
@@ -241,7 +241,7 @@
                 },
                 {
                   "code": "PSG3.1.4",
-                  "text": "The company responds to stakeholder grievances by either:a) regularly communicating each step in the resolution process and its outcome to the complainant, and confrming when the grievance hasbeen resolvedb) explaining why it did not accept the issue as a grievance.",
+                  "text": "The company responds to stakeholder grievances by either:\na) regularly communicating each step in the resolution process and its outcome to the complainant, and confrming when the grievance hasbeen resolved\nb) explaining why it did not accept the issue as a grievance.",
                   "guidance": ""
                 }
               ]
@@ -264,12 +264,12 @@
               "criteria": [
                 {
                   "code": "JEDI2.1.1",
-                  "text": "The company chooses and implements at minimum one option from the following two sets.a) Foundation (JEDI2.a-e)b) Beyond the Workplace (JEDI2.m-s)",
+                  "text": "The company chooses and implements at minimum one option from the following two sets.\na) Foundation (JEDI2.a-e)\nb) Beyond the Workplace (JEDI2.m-s)",
                   "guidance": ""
                 },
                 {
                   "code": "JEDI2.1.1",
-                  "text": "The company chooses and implements at minimum one option from the following two sets.a) Foundation (JEDI2.a-e)b) Beyond the Workplace (JEDI2.m-s)",
+                  "text": "The company chooses and implements at minimum one option from the following two sets.\na) Foundation (JEDI2.a-e)\nb) Beyond the Workplace (JEDI2.m-s)",
                   "guidance": ""
                 }
               ]
@@ -280,7 +280,7 @@
               "criteria": [
                 {
                   "code": "JEDI2.a.1",
-                  "text": "The company develops a JEDI commitment statement that:a) is publicb) is approved by the executive team or highest governing bodyc) applies to the company's policies and practices across operations, customers, and community",
+                  "text": "The company develops a JEDI commitment statement that:\na) is public\nb) is approved by the executive team or highest governing body\nc) applies to the company's policies and practices across operations, customers, and community",
                   "guidance": ""
                 },
                 {
@@ -301,7 +301,7 @@
                 },
                 {
                   "code": "JEDI2.b.2",
-                  "text": "The company improves the JEDI knowledge or capacity of at least two of the following groups.a) The highest governing bodyb) The executive teamc) Human resourcesd) Training & developmente) Managers",
+                  "text": "The company improves the JEDI knowledge or capacity of at least two of the following groups.\na) The highest governing body\nb) The executive team\nc) Human resources\nd) Training & development\ne) Managers",
                   "guidance": ""
                 }
               ]
@@ -312,12 +312,12 @@
               "criteria": [
                 {
                   "code": "JEDI2.c.1",
-                  "text": "The company reviews at least fve policies that affect people using:a) data from JEDI1b) stakeholder feedbackc) its JEDI commitment statement, if applicable (JEDI2.a)d) its improved in-house knowledge or capacity, if applicable (JEDI2.b)",
+                  "text": "The company reviews at least fve policies that affect people using:\na) data from JEDI1\nb) stakeholder feedback\nc) its JEDI commitment statement, if applicable (JEDI2.\na)\nd) its improved in-house knowledge or capacity, if applicable (JEDI2.\nb)",
                   "guidance": ""
                 },
                 {
                   "code": "JEDI2.c.2",
-                  "text": "The review looks at:a) terminology used in the policiesb) impacts the policies have on peoplec) relationships to JEDI principles",
+                  "text": "The review looks at:\na) terminology used in the policies\nb) impacts the policies have on people\nc) relationships to JEDI principles",
                   "guidance": ""
                 },
                 {
@@ -369,7 +369,7 @@
                 },
                 {
                   "code": "JEDI2.e.4",
-                  "text": "The scope of the equity audit includes, at minimum, the company’s:a) workersb) internal and external communicationc) products and services.",
+                  "text": "The scope of the equity audit includes, at minimum, the company’s:\na) workers\nb) internal and external communication\nc) products and services.",
                   "guidance": ""
                 },
                 {
@@ -395,7 +395,7 @@
                 },
                 {
                   "code": "JEDI2.m.2",
-                  "text": "The assessment:a) confrms the website meets the AA or AAA criteria of the Web Content Accessibility Guidelines (WCAG)b) is carried out by an internal or external specialistc) includes manual testingd) includes feedback from people with disabilities",
+                  "text": "The assessment:\na) confrms the website meets the AA or AAA criteria of the Web Content Accessibility Guidelines (WCAG)\nb) is carried out by an internal or external specialist\nc) includes manual testing\nd) includes feedback from people with disabilities",
                   "guidance": ""
                 }
               ]
@@ -417,7 +417,7 @@
               "criteria": [
                 {
                   "code": "JEDI2.o.1",
-                  "text": "The company implements all of the following actions.a) It tracks diversity of ownership among its local suppliers.b) It establishes a policy to give preferences to local suppliers owned by persons from underrepresented groups.c) It sets targets to purchase a percentage of goods and services from local suppliers owned by persons from underrepresented groups",
+                  "text": "The company implements all of the following actions.\na) It tracks diversity of ownership among its local suppliers.\nb) It establishes a policy to give preferences to local suppliers owned by persons from underrepresented groups.\nc) It sets targets to purchase a percentage of goods and services from local suppliers owned by persons from underrepresented groups",
                   "guidance": ""
                 }
               ]
@@ -428,7 +428,7 @@
               "criteria": [
                 {
                   "code": "JEDI2.p.1",
-                  "text": "The company develops a communications and ethical content guide that:a) lists terms that should and should not be used for each external communication languageb) describes how to gather, manage, and use content ethicallyc) sets expectations for representing social identitiesd) is shared with all workers who produce external communications",
+                  "text": "The company develops a communications and ethical content guide that:\na) lists terms that should and should not be used for each external communication language\nb) describes how to gather, manage, and use content ethically\nc) sets expectations for representing social identities\nd) is shared with all workers who produce external communications",
                   "guidance": ""
                 },
                 {
@@ -449,7 +449,7 @@
                 },
                 {
                   "code": "JEDI2.q.2",
-                  "text": "The assessment highlights:a) which specifc social identity groups may experience barriers when accessing the product or serviceb) what those barriers are.",
+                  "text": "The assessment highlights:\na) which specifc social identity groups may experience barriers when accessing the product or service\nb) what those barriers are.",
                   "guidance": ""
                 }
               ]
@@ -486,7 +486,7 @@
                 },
                 {
                   "code": "JEDI2.s.2",
-                  "text": "The initiative has a clear, shared purpose and goal, to:a) achieve systems change or transformationb) collaboratively deliver specifc, measurable impacts.",
+                  "text": "The initiative has a clear, shared purpose and goal, to:\na) achieve systems change or transformation\nb) collaboratively deliver specifc, measurable impacts.",
                   "guidance": ""
                 },
                 {
@@ -524,12 +524,12 @@
                 },
                 {
                   "code": "HR3.3.3",
-                  "text": "The company records how it assessed the potential negative human rights impacts of its three most material potential clients or projectseach year, and the outcomes of the process.a) in the last fscal year before Year 0b) annually in each subsequent year.",
+                  "text": "The company records how it assessed the potential negative human rights impacts of its three most material potential clients or projectseach year, and the outcomes of the process.\na) in the last fscal year before Year 0\nb) annually in each subsequent year.",
                   "guidance": ""
                 },
                 {
                   "code": "HR3.3.4",
-                  "text": "For Years 3 and 5, the company:a) records its mitigation action, if its assessments identifed any potential or actual negative impactsb) records the effectiveness of its mitigation actions.",
+                  "text": "For Years 3 and 5, the company:\na) records its mitigation action, if its assessments identifed any potential or actual negative impacts\nb) records the effectiveness of its mitigation actions.",
                   "guidance": ""
                 }
               ]
@@ -550,12 +550,12 @@
                 },
                 {
                   "code": "HR3.4.3",
-                  "text": "The company records how it assessed the potential negative human rights impacts of its three most material potential investments eachyear, and the outcomes of the processa) in the last fscal year before Year 0b) annually in each subsequent year.",
+                  "text": "The company records how it assessed the potential negative human rights impacts of its three most material potential investments eachyear, and the outcomes of the process\na) in the last fscal year before Year 0\nb) annually in each subsequent year.",
                   "guidance": ""
                 },
                 {
                   "code": "HR3.4.4",
-                  "text": "For Years 3 and 5, the company:a) records its mitigation action, if its assessments identifed any potential or actual negative impactsb) records the effectiveness of its mitigation actions.",
+                  "text": "For Years 3 and 5, the company:\na) records its mitigation action, if its assessments identifed any potential or actual negative impacts\nb) records the effectiveness of its mitigation actions.",
                   "guidance": ""
                 },
                 {
@@ -570,12 +570,12 @@
                 },
                 {
                   "code": "HR3.4.3",
-                  "text": "The company records how it assessed the potential negative human rights impacts of its three most material potential clients or projectseach year, and the outcomes of the process.a) in the last fscal year before Year 0b) annually in each subsequent year.",
+                  "text": "The company records how it assessed the potential negative human rights impacts of its three most material potential clients or projectseach year, and the outcomes of the process.\na) in the last fscal year before Year 0\nb) annually in each subsequent year.",
                   "guidance": ""
                 },
                 {
                   "code": "HR3.4.4",
-                  "text": "For Years 3 and 5, the company:a) records its mitigation action, if its assessments identifed any potential or actual negative impactsb) records the effectiveness of its mitigation actions.",
+                  "text": "For Years 3 and 5, the company:\na) records its mitigation action, if its assessments identifed any potential or actual negative impacts\nb) records the effectiveness of its mitigation actions.",
                   "guidance": ""
                 }
               ]
@@ -596,12 +596,12 @@
                 },
                 {
                   "code": "HR3.5.3",
-                  "text": "The company records how it assessed the potential negative human rights impacts of its three most material potential investments eachyear, and the outcomes of the processa) in the last fscal year before Year 0b) annually in each subsequent year.",
+                  "text": "The company records how it assessed the potential negative human rights impacts of its three most material potential investments eachyear, and the outcomes of the process\na) in the last fscal year before Year 0\nb) annually in each subsequent year.",
                   "guidance": ""
                 },
                 {
                   "code": "HR3.5.4",
-                  "text": "For Years 3 and 5, the company:a) records its mitigation action, if its assessments identifed any potential or actual negative impactsb) records the effectiveness of its mitigation actions.",
+                  "text": "For Years 3 and 5, the company:\na) records its mitigation action, if its assessments identifed any potential or actual negative impacts\nb) records the effectiveness of its mitigation actions.",
                   "guidance": ""
                 }
               ]
@@ -618,7 +618,7 @@
               "criteria": [
                 {
                   "code": "HR4.2.1",
-                  "text": "The company has considered the actual and potential human rights impacts of the three most material procurement decisionsa) in the last fscal year or twelve months before Year 0b) in each subsequent year.",
+                  "text": "The company has considered the actual and potential human rights impacts of the three most material procurement decisions\na) in the last fscal year or twelve months before Year 0\nb) in each subsequent year.",
                   "guidance": ""
                 }
               ]
@@ -646,7 +646,7 @@
                 },
                 {
                   "code": "CA2.1.2",
-                  "text": "The company’s action plan:a) commits to supporting the global ambition to limit global warming to 1.5°Cb) includes specifc, measurable, achievable, relevant, and time-bound (SMART) targets for performance and impactc) specifes how the company will allocate human, technical, and material resources for implementationd) outlines how the company will engage and work with stakeholderse) is approved by the highest governing body.",
+                  "text": "The company’s action plan:\na) commits to supporting the global ambition to limit global warming to 1.5°C\nb) includes specifc, measurable, achievable, relevant, and time-bound (SMART) targets for performance and impact\nc) specifes how the company will allocate human, technical, and material resources for implementation\nd) outlines how the company will engage and work with stakeholders\ne) is approved by the highest governing body.",
                   "guidance": ""
                 },
                 {
@@ -684,12 +684,12 @@
                 },
                 {
                   "code": "ESC2.6.3",
-                  "text": "The company records how it assessed the potential negative environmental impacts of its three most material potential clients, and theoutcomes of the process:a) in the fscal year before Year 0b) annually in each subsequent year.",
+                  "text": "The company records how it assessed the potential negative environmental impacts of its three most material potential clients, and theoutcomes of the process:\na) in the fscal year before Year 0\nb) annually in each subsequent year.",
                   "guidance": ""
                 },
                 {
                   "code": "ESC2.6.4",
-                  "text": "For Years 3 and 5 the company:a) records the mitigation action it took, if its assessments identifed any potential or actual negative impactsb) records the effectiveness of its mitigation actions",
+                  "text": "For Years 3 and 5 the company:\na) records the mitigation action it took, if its assessments identifed any potential or actual negative impacts\nb) records the effectiveness of its mitigation actions",
                   "guidance": ""
                 }
               ]
@@ -710,12 +710,12 @@
                 },
                 {
                   "code": "ESC2.7.3",
-                  "text": "The company records how it assessed the potential negative environmental impacts of its three most material potential clients, and theoutcomes of the process:a) in the fscal year before Year 0b) annually in each subsequent year",
+                  "text": "The company records how it assessed the potential negative environmental impacts of its three most material potential clients, and theoutcomes of the process:\na) in the fscal year before Year 0\nb) annually in each subsequent year",
                   "guidance": ""
                 },
                 {
                   "code": "ESC2.7.4",
-                  "text": "For Years 3 and 5, the company:a) records the mitigation action it took, if its assessments identifed any potential or actual negative impactsb) records the effectiveness of its mitigation actions",
+                  "text": "For Years 3 and 5, the company:\na) records the mitigation action it took, if its assessments identifed any potential or actual negative impacts\nb) records the effectiveness of its mitigation actions",
                   "guidance": ""
                 }
               ]
@@ -742,12 +742,12 @@
                 },
                 {
                   "code": "ESC2.6.3",
-                  "text": "The company records how it assessed the potential negative environmental impacts of its three most material potential clients, and theoutcomes of the process:a) in the fscal year before Year 0b) annually in each subsequent year.",
+                  "text": "The company records how it assessed the potential negative environmental impacts of its three most material potential clients, and theoutcomes of the process:\na) in the fscal year before Year 0\nb) annually in each subsequent year.",
                   "guidance": ""
                 },
                 {
                   "code": "ESC2.6.4",
-                  "text": "For Years 3 and 5 the company:a) records the mitigation action it took, if its assessments identifed any potential or actual negative impactsb) records the effectiveness of its mitigation actions",
+                  "text": "For Years 3 and 5 the company:\na) records the mitigation action it took, if its assessments identifed any potential or actual negative impacts\nb) records the effectiveness of its mitigation actions",
                   "guidance": ""
                 }
               ]
@@ -768,12 +768,12 @@
                 },
                 {
                   "code": "ESC2.7.3",
-                  "text": "The company records how it assessed the potential negative environmental impacts of its three most material potential investments, andthe outcomes of the process:a) in the fscal year before Year 0b) annually in each subsequent year.",
+                  "text": "The company records how it assessed the potential negative environmental impacts of its three most material potential investments, andthe outcomes of the process:\na) in the fscal year before Year 0\nb) annually in each subsequent year.",
                   "guidance": ""
                 },
                 {
                   "code": "ESC2.7.4",
-                  "text": "For Years 3 and 5, the company:a) records the mitigation action it took, if its assessments identifed any potential or actual negative impactsb) records the effectiveness of its mitigation actions",
+                  "text": "For Years 3 and 5, the company:\na) records the mitigation action it took, if its assessments identifed any potential or actual negative impacts\nb) records the effectiveness of its mitigation actions",
                   "guidance": ""
                 }
               ]
@@ -790,7 +790,7 @@
               "criteria": [
                 {
                   "code": "ESC5.1.1",
-                  "text": "The company has considered the actual and potential environmental impacts for the three most material procurement decisions:a) in the fscal year or twelve months before Year 0b) in each subsequent year.",
+                  "text": "The company has considered the actual and potential environmental impacts for the three most material procurement decisions:\na) in the fscal year or twelve months before Year 0\nb) in each subsequent year.",
                   "guidance": ""
                 }
               ]
@@ -818,17 +818,17 @@
                 },
                 {
                   "code": "GACA1.1.2",
-                  "text": "The company’s lobbying policy states its approach to responsible lobbying, including:a) a statement that the company will lobby only to contribute to a positive impact on society or the environmentb) a statement that its lobbying approach is based on either reliable or scientifc data (or both)c) its approach to fnancial and in-kind political contributionsd) its approach to anti-corruption and briberye) its approach to responsible lobbying with intermediary organizations, including controls that ensure consistency with the lobbying policyf) which governance body within the company will formally review and approve the policy, and how frequently.",
+                  "text": "The company’s lobbying policy states its approach to responsible lobbying, including:\na) a statement that the company will lobby only to contribute to a positive impact on society or the environment\nb) a statement that its lobbying approach is based on either reliable or scientifc data (or both)\nc) its approach to fnancial and in-kind political contributions\nd) its approach to anti-corruption and bribery\ne) its approach to responsible lobbying with intermediary organizations, including controls that ensure consistency with the lobbying policy\nf) which governance body within the company will formally review and approve the policy, and how frequently.",
                   "guidance": ""
                 },
                 {
                   "code": "GACA1.1.3",
-                  "text": "The company’s lobbying policy states its governance, control, and risk management practices, including:a) which governance body or executive-level position within the company is accountable for enforcing the policyb) how the policy is embedded within the company, including how the company puts it into practicec) how the company identifes, manages, and monitors risks of non-complianced) how the company evaluates compliance with the governance and control frameworke) how stakeholders can raise concerns about the company’s business conduct and lobbying practices, including reference to the company’sgrievance procedure [link to PSG3].",
+                  "text": "The company’s lobbying policy states its governance, control, and risk management practices, including:\na) which governance body or executive-level position within the company is accountable for enforcing the policy\nb) how the policy is embedded within the company, including how the company puts it into practice\nc) how the company identifes, manages, and monitors risks of non-compliance\nd) how the company evaluates compliance with the governance and control framework\ne) how stakeholders can raise concerns about the company’s business conduct and lobbying practices, including reference to the company’sgrievance procedure [link to PSG3].",
                   "guidance": ""
                 },
                 {
                   "code": "GACA1.1.4",
-                  "text": "The company’s lobbying policy is:a) approved by the highest governing bodyb) published on the company’s webpage and accessible to all stakeholders",
+                  "text": "The company’s lobbying policy is:\na) approved by the highest governing body\nb) published on the company’s webpage and accessible to all stakeholders",
                   "guidance": ""
                 }
               ]
@@ -845,7 +845,7 @@
               "criteria": [
                 {
                   "code": "GACA2.1.1",
-                  "text": "The company takes part in collective action from the fve options in this Impact Topic.a) GACA2.1a The company mentors others in its industry, profession, or value chain to advance their social or environmental impacts.b) GACA2.1b The company contributes to external research to advance social or environmental impacts.c) GACA2.1c The company collaborates with multiple stakeholders to advance social or environmental impacts.d) GACA2.1d The company promotes public policy to advance social or environmental impactse) GACA2.1e The company uses thought leadership to drive systemic change towards an equitable, inclusive, and regenerative economy",
+                  "text": "The company takes part in collective action from the fve options in this Impact Topic.\na) GACA2.1a The company mentors others in its industry, profession, or value chain to advance their social or environmental impacts.\nb) GACA2.1b The company contributes to external research to advance social or environmental impacts.\nc) GACA2.1c The company collaborates with multiple stakeholders to advance social or environmental impacts.\nd) GACA2.1d The company promotes public policy to advance social or environmental impacts\ne) GACA2.1e The company uses thought leadership to drive systemic change towards an equitable, inclusive, and regenerative economy",
                   "guidance": ""
                 },
                 {
@@ -861,7 +861,7 @@
               "criteria": [
                 {
                   "code": "GACA2.1a.1",
-                  "text": "The company’s mentoring has:a) a clear objective aligned with advancing the mentee’s social or environmental impactb) a clear positive outcome that the mentee confrms",
+                  "text": "The company’s mentoring has:\na) a clear objective aligned with advancing the mentee’s social or environmental impact\nb) a clear positive outcome that the mentee confrms",
                   "guidance": ""
                 }
               ]
@@ -883,7 +883,7 @@
               "criteria": [
                 {
                   "code": "GACA2.1c.1",
-                  "text": "The multi-stakeholder collaboration:a) has a clear purpose and aims to deliver specifc, measurable impacts collaboratively.b) aims to create a positive impact on society or the environment.",
+                  "text": "The multi-stakeholder collaboration:\na) has a clear purpose and aims to deliver specifc, measurable impacts collaboratively.\nb) aims to create a positive impact on society or the environment.",
                   "guidance": ""
                 }
               ]
