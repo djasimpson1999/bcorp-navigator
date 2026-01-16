@@ -1,0 +1,2076 @@
+{
+  "size": "xlarge",
+  "industry": "wholesale-retail",
+  "totalCriteria": 289,
+  "impactTopics": [
+    {
+      "code": "FR",
+      "name": "Foundational Requirements",
+      "requirements": [
+        {
+          "code": "FR1",
+          "title": "The company fulfills the eligibility requirements for B Corp Certification.",
+          "subRequirements": [
+            {
+              "code": "FR1.1",
+              "title": "The company meets the necessary qualifications to pursue B Corp Certification.",
+              "criteria": [
+                {
+                  "code": "FR1.1.1",
+                  "text": "The company is confrmed to be:a) an incorporated business entityb) in operation for at least 12 monthsc) generating a majority of revenue from a competitive market.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR1.1.2",
+                  "text": "The company does not fall into any of the following categories.a) Business divisions, brands, or units, or businesses that are not complete and distinct from their parent or group of affliatesb) Franchisors who do not own a majority of global franchisee locations, or franchisors without geographic distinction from independentfranchiseesc) Non-profts or Civil Society Organizations (CSOs), foundations, or charitable entities, unless otherwise approved by B Labd) Governments, government agencies, government ministries, or state-owned enterprises, unless otherwise approved by B Labe) Company legally registered in regions not covered operationally by B Lab and not part of a larger group registered in a region covered byB Lab",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "FR1.2",
+              "title": "The company is not significantly involved in industries that undermine the B Lab Theory of Change",
+              "criteria": [
+                {
+                  "code": "FR1.2.1",
+                  "text": "The company generates less than 1% of annual revenue from causing or contributing to the impacts on affected stakeholders of the listedindustries:a) Fossil fuel producersb) Gamblingc) Pornographyd) Prisons and detention centers (including prison or detention center labor)e) Tobaccof) Weapons",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR1.2.2",
+                  "text": "If a company generates more than 1% of annual revenue from being linked to impacts on affected stakeholders in the listed industries,then they publicly report this.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR1.2.3",
+                  "text": "For electric utilities and power generation companies, less than 50% of their product portfolio or energy mix is from fossil fuels.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR1.2.4",
+                  "text": "B Corps certifed against version 6 of the standards must meet FR1.2 by Year 3 (not Year 0).",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "FR1.3",
+              "title": "The company complies with local and national laws and regulations.",
+              "criteria": [
+                {
+                  "code": "FR1.3.1",
+                  "text": "The company complies with all applicable local and national laws and regulations.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR1.3.2",
+                  "text": "The company signs an Agreement committing to the B Corp Certifcation process.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "FR1.4",
+              "title": "The company shares accurate and complete information with B Lab.",
+              "criteria": [
+                {
+                  "code": "FR1.4.1",
+                  "text": "The company shares accurate and complete information by:a) using credible evidence and data sourceb) having a clear understanding of B Lab’s resources.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR1.4.2",
+                  "text": "The company shares accurate and complete information at all times:a) in its B Impact Assessmentb) in providing information to assurance providers authorized by B Labc) in all communications with B Lab personnel.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR1.4.3",
+                  "text": "The company signs an Agreement committing to the B Corp Certifcation process.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "FR1.5",
+              "title": "The company is transparent about its performance against the B Lab Standard.",
+              "criteria": [
+                {
+                  "code": "FR1.5.1",
+                  "text": "The company shares basic details for its B Corp public profle through the B Impact Assessment platform.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR1.5.2",
+                  "text": "The company agrees to publicly share information as required by the B Lab Standard.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR1.5.3",
+                  "text": "If the company is a wholly-owned or majority-owned subsidiary, or a large public company, it makes its entire B Impact Assessment reportpublic and identifes any majority owners.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR1.5.4",
+                  "text": "The company agrees that B Lab can make its B Impact Report and basic profle information available on the B Lab Global website andother B Lab and Sistema B Global Partner websites while the company is a certifed B Corp",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR1.5.5",
+                  "text": "The company signs an Agreement committing to the B Corp Certifcation process.",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "FR2",
+          "title": "The company adopts the B Corp legal requirement and commits to support the B Corp community’s collective purpose.",
+          "subRequirements": [
+            {
+              "code": "FR2.1",
+              "title": "The company adopts the B Corp legal requirement in its corporate structure or governing documents.",
+              "criteria": [
+                {
+                  "code": "FR2.1.1",
+                  "text": "The company adopts an entity type or an amendment to its governing documents to require stakeholder governance (meaning it considersstakeholders in its decision-making). The company adopts stakeholder governance in accordance with the B Corp legal requirement, and asapplicable to its legal form and jurisdiction.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR2.1.2",
+                  "text": "If the company cannot adopt a stakeholder governance legal form because of local laws, it signs the B Corp Agreement and commits to:a) working with B Lab to determine the appropriate legal pathwayb) advocating for beneft corporation legislation in its jurisdictionc) amending its formation documents or adopting a new legal form if one is enacted through local lawmaking.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR2.1.3",
+                  "text": "The company signs an Agreement committing to the B Corp Certifcation process.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "FR2.2",
+              "title": "The company signs the Declaration of Interdependence and commits to the shared collective purpose of the B Corp community",
+              "criteria": [
+                {
+                  "code": "FR2.2.1",
+                  "text": "The company commits to the shared collective purpose of the B Corp community, as set out in the Declaration of Interdependence:We envision a global economy that uses business as a force for good. This economy is comprised of a new type of corporation — the BCorporation — which is purpose-driven and creates beneft for all stakeholders, not just shareholders.As Certifed B Corporations and leaders of this emerging economy, we believe:That we must be the change we seek in the world.That all business ought to be conducted as if people and place mattered.That, through their products, practices, and profts, businesses should aspire to do no harm and beneft all.To do so requires that we act with the understanding that we are each dependent upon another and thus responsible for each other and futuregenerations.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR2.2.2",
+                  "text": "The company signs an Agreement committing to the B Corp Certifcation process.",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "FR3",
+          "title": "The company creates a risk profile and meets any additional sub-requirements",
+          "subRequirements": [
+            {
+              "code": "FR3.1",
+              "title": "The company creates a risk profile and meets any additional sub-requirements",
+              "criteria": [
+                {
+                  "code": "FR3.1.1",
+                  "text": "TThe company creates a risk profle using B Lab’s Risk Tool by answering the 14 questions in FR3.1.a to FR3.1.n.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR3.1.2",
+                  "text": "The company meets any additional Impact Topic sub-requirements that the Risk Tool activates.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR3.1.3",
+                  "text": "The company agrees to a summary of the risk profle being displayed on its B Corp public profle",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR3.1.a.1",
+                  "text": "[Small companies in all sectors] If Yes, in addition to the sub-requirements that already apply, the company meets the following criteria. a) The company meets HR2.1, 2.3, and 2.4. b) The company considers the potential impact (see Intent) in the human rights saliency assessment (HR2.1).",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR3.1.a.2",
+                  "text": "[Medium, Large and X Large companies in Manufacturing, Agriculture, Wholesale/Retail, and Service with signifcant footprint] If Yes, inaddition to the sub-requirements that already apply, the company meets the following criteria.a) The company meets HR2.5.b) The company considers the potential impact (see Intent) in the human rights saliency assessment (HR2.1).",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR3.1.a.3",
+                  "text": "[Medium companies in Service with a minor footprint] If Yes, in addition to the sub-requirements that already apply, the company meetsthe following criteria.a) The company meets HR2.1, 2.3, and 2.4.b) The company considers the potential impact (see Intent) in the human rights saliency assessment (HR2.1).",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR3.1.a.4",
+                  "text": "[Large and X Large companies in Service with a minor footprint] If Yes, in addition to the sub-requirements that already apply, the companymeets the following criteria.a) The company meets HR2.3, 2.4, and 2.5.b) The company considers the potential impact (see Intent) in the human rights saliency assessment (HR2.1).",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR3.1.a.4",
+                  "text": "[XX Large companies in all sectors] If Yes, the company considers the potential impact (see Intent) in their Human Rights SaliencyAssessment (HR2.1).",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR3.1.n.1",
+                  "text": "[Small companies in all sectors] If Yes, in addition to the sub-requirements that already apply,a) The company meets PSG4.2.b) The company selects “not applicable” for PSG4.1 because PSG4.2 replaces it.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR3.1.n.2",
+                  "text": "[Medium companies in all sectors] If Yes, in addition to the sub-requirements that already apply, a) The company meets PSG3.3 and PSG3.4. b) The company selects “not applicable” for PSG3.1 because PSG3.3 replaces it. c) The company selects “not applicable” for PSG3.2 because PSG3.4 replaces it",
+                  "guidance": ""
+                },
+                {
+                  "code": "FR3.1.n.3",
+                  "text": "[Large, X Large, and XX Large companies in all sectors] If Yes, no change to the sub-requirement that applies. The most demanding sub-requirement under PSG3 already applies.",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PSG",
+      "name": "Purpose and Stakeholder Governance",
+      "requirements": [
+        {
+          "code": "PSG1",
+          "title": "The company establishes a public purpose to make a meaningful positive impact.",
+          "subRequirements": [
+            {
+              "code": "PSG1.1",
+              "title": "The company establishes a public purpose to make a meaningful positive impact.",
+              "criteria": [
+                {
+                  "code": "PSG1.1.1",
+                  "text": "The company establishes a purpose statement which:a) sets out the specifc positive and meaningful impact the company intends to make on society or the environment, or bothb) has business relevance and is integrated into its strategyc) is publicly available on the company’s webpaged) is approved by the company’s highest governing body.",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PSG2",
+          "title": "The company considers its impacts on stakeholders in decision-making.",
+          "subRequirements": [
+            {
+              "code": "PSG2.2",
+              "title": "The company has a stakeholder governance policy.",
+              "criteria": [
+                {
+                  "code": "PSG2.2 1",
+                  "text": "The company’s stakeholder governance policy describes:a) what it means to be a company with a stakeholder governance modelb) the criteria for identifying and prioritizing stakeholders, including a comprehensive map of the company's stakeholdersc) how decision-makers across the company consider stakeholders in decision-making related to (potential) positive and negative impactsd) how the company delivers value to stakeholders through considering their interestse) the mechanisms to encourage regular stakeholder engagement.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.2 2",
+                  "text": "The following stakeholders are represented with one or more engagement mechanisms.a) Workers of the company or its subsidiariesb) Suppliersc) Customersd) Investorse) The community where offces or facilities of the company, its subsidiaries, its suppliers, or its investments are locatedf) The local or global environment",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.2 3",
+                  "text": "The policy is approved by the highest governing body.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.2 4",
+                  "text": "The policy is communicated to company workers and available for them to access.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.2.1",
+                  "text": "The company’s stakeholder governance policy describes:a) what it means to be a company with a stakeholder governance modelb) the criteria for identifying and prioritizing stakeholdersc) how decision-makers across the company consider stakeholders in decision-making related to (potential) positive and negative impactsd) how the company delivers value to stakeholders through considering their interestse) the mechanisms to encourage regular stakeholder engagement",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.2.2",
+                  "text": "The following stakeholders are represented with one or more engagement mechanisms.a) Workers of the company or its subsidiariesb) Suppliersc) Customersd) Investorse) The community where offices or facilities of the company, its subsidiaries, its suppliers, or its investments are locatedf) The local or global environment",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.2.3",
+                  "text": "The policy is approved by the highest governing body.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.2.4",
+                  "text": "The policy is communicated to company workers and available for them to access.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "PSG2.3",
+              "title": "The company conducts regular materiality assessment to assess and identify material topics",
+              "criteria": [
+                {
+                  "code": "PSG2.3.1",
+                  "text": "The company engages the following stakeholders or their representatives in a materiality assessment.a) Workers of the company or its subsidiariesb) Suppliersc) Customersd) Investorse) The community where offces or facilities of the company, its subsidiaries, its suppliers, or its investments are locatedf) The local or global environment",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.3.2",
+                  "text": "The materiality assessment: a) covers the salient human rights issues and material environmental issues addressed in the B Lab Standard b) covers topics relevant to the company and its stakeholders, but not addressed in the B Lab Standard c) uses a double materiality or impact materiality approach. It cannot only assess fnancial materiality.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.3.3",
+                  "text": "The company assesses topics based on their signifcance and sets a threshold to determine its material topics.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.3.4",
+                  "text": "The company conducts a full materiality assessment at least every 36 months. Between full assessments, it also undertakes one interimreview of materiality with a selection of its stakeholders, to update its material topics.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.3.5",
+                  "text": "The highest governing body has oversight of the materiality assessment process and reviews the results.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.3.6",
+                  "text": "The final outcome and the methodology the company used in its assessment are publicly available in the annual impact report or on thecompany’s webpage. The outcome may take the form of a materiality matrix or a list of identifed material topics, plus a summary of stakeholderengagement processes.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.3.1",
+                  "text": "The company engages the following stakeholders or their representatives in a materiality assessment.a) Workers of the company or its subsidiariesb) Suppliersc) Customersd) Investorse) The community where offces or facilities of the company, its subsidiaries, its suppliers, or its investments are locatedf) The local or global environment",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.3.2",
+                  "text": "The materiality assessment:a) covers the salient human rights issues and material environmental issues addressed in the B Lab Standardb) covers topics relevant to the company and its stakeholders, but not addressed in the B Lab Standardc) uses a double materiality or impact materiality approach. It cannot only assess fnancial materiality",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.3.3",
+                  "text": "The company assesses topics based on their signifcance and sets a threshold to determine its material topics.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.3.4",
+                  "text": "The company conducts a full materiality assessment at least every three years. Between full assessments, it also undertakes one interimreview of materiality with a selection of its stakeholders, to update its material topics.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.3.5",
+                  "text": "The highest governing body has oversight of the materiality assessment process and reviews the results",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.3.6",
+                  "text": "The fnal outcome and the methodology the company used in its assessment are publicly available in the annual impact report or on thecompany’s webpage. The outcome may take the form of a materiality matrix or a list of identifed material topics, plus a summary of stakeholderengagement processes",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "PSG2.4",
+              "title": "The company identifies material topics not addressed in the B Lab Standard, sets targets, and reports progress annually.",
+              "criteria": [
+                {
+                  "code": "PSG2.4.1",
+                  "text": "The company identifes any material topics from its materiality assessment that are not addressed in the B Lab Standard",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.4.2",
+                  "text": "The company sets at least one target per material topic it identifes",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.4.3",
+                  "text": "The targets are:a) specifc, measurable, achievable, relevant, and time-bound (SMART)b) integrated into the company strategyc) available to the publicd) approved by the highest governing body",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.4.4",
+                  "text": "The company assigns responsibility for achieving each target.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.4.5",
+                  "text": "In the years after setting its targets, the company publicly reports its progress in its impact report or website.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.4.6",
+                  "text": "Once the company has achieved a target for a material topic, it sets a new target that meets these Compliance Criteria.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.4.1",
+                  "text": "The company identifes any material topics from its materiality assessment that are not addressed in the B Lab Standard.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.4.2",
+                  "text": "The company sets at least one target per material topic it identifes.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.4.3",
+                  "text": "The targets are:a) specifc, measurable, achievable, relevant, and time-bound (SMART)b) integrated into the company strategyc) available to the publicd) approved by the highest governing bodye) more ambitious than legal minimums.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.4.4",
+                  "text": "The company assigns responsibility for achieving each target.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.4.5",
+                  "text": "In the years after setting its targets, the company publicly reports its progress in its impact report or website.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG2.4.6",
+                  "text": "Once the company has achieved a target for a material topic, it sets a new target that meets these Compliance Criteria.",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PSG3",
+          "title": "The company has adequate procedures to address stakeholder grievances.",
+          "subRequirements": [
+            {
+              "code": "PSG3.3",
+              "title": "The company has a publicly accessible grievance procedure allowing stakeholders to safely raise grievances and seek resolutions",
+              "criteria": [
+                {
+                  "code": "PSG3.3.1",
+                  "text": "The company’s grievance procedure is available on its webpage in relevant languages or forms to ensure stakeholders can access it.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG3.3.2",
+                  "text": "The grievance procedure explains:a) grounds for accepting a grievanceb) grievance process steps and targeted deadlines for managing a grievancec) how a resolution is facilitated",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG3.3.3",
+                  "text": "The grievance procedure states the processes and controls in place to protect stakeholders who raise grievances from any form ofretaliation.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG3.3.4",
+                  "text": "The company responds to stakeholder grievances by either:a) regularly communicating each step in the resolution process and its outcome, and confrming when the grievance has been resolvedb) explaining why it did not accept the issue as a grievance.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG3.3.5",
+                  "text": "The company notifes each of its main stakeholders the relevant grievance procedures.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG3.3.6",
+                  "text": "The grievance procedure clearly explains how the decision-making process will avoid conficts of interest.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "PSG3.4",
+              "title": "The company tracks grievances, assigns accountability for resolving them and reports internally to the highest governing body",
+              "criteria": [
+                {
+                  "code": "PSG3.4.1",
+                  "text": "The company conducts an annual analysis of grievances and creates an internal report. The report:a) has details on grievances raised and acceptedb) evaluates the effectiveness of the company’s proceduresc) identifes trends and hotspotsd) recommends improvements to address these areas.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG3.4.2",
+                  "text": "The company has a management or executive role responsible for overseeing the grievance procedure. The manager presents the annualinternal summary report on the grievance procedure to the highest governing body.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG3.4.3",
+                  "text": "The company demonstrates the effectiveness of the grievance procedure by either:a) recording evidence that a grievance has been resolved and closedb) demonstrating that they have the appropriate grievance procedure in place (inclusive of tracking), where a company has had no grievancesfled.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG3.4.4",
+                  "text": "The company publicly reports on grievance decision outcomes in accordance with the following data from the UNGP Effectiveness Criteria:a) The number, types, and nature of grievances receivedb) The number of requests rejected and on what groundsc) The number of completed cases, the outcomes, any follow-up activities, and the average duration of the processd) Stakeholder satisfaction levelse) Any other data that will help the public understand the procedure’s performance",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PSG4",
+          "title": "The company engages in responsible marketing and public relations.",
+          "subRequirements": [
+            {
+              "code": "PSG4.2",
+              "title": "The company has a responsible marketing and public relations policy overseen by the executive team or highest governing",
+              "criteria": [
+                {
+                  "code": "PSG4.2.1",
+                  "text": "The company develops a responsible marketing and public relations policy. The policy:a) describes its scopeb) applies to all audiencesc) outlines requirements for anyone preparing marketing and public relations activities for the companyd) is approved by the executive team or highest governing body",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG4.2.2",
+                  "text": "The requirements in the policy include the following criteria for the company’s social and environmental claims at minimum.a) Claims are precise, verifable, and substantiated using reliable or scientifc data.b) Claims are proportional to the company's actions.c) Claims accurately refect their applicable scope and are relevant to the company’s impact.d) Communications are truthful, transparent, and accountable about the social and environmental impacts of the company’s operations, bothpositive and negative.e) Ethical guidelines govern the company's use of sensitive marketing and public relations’ channels and practices.f) Language is understandable and clear, matches the general knowledge level of consumers, and available in prevalent languages or formsrelevant to stakeholders where the company operates.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG4.2.3",
+                  "text": "The company assigns accountability at the level of the executive team or highest governing body for ensuring all marketing and publicrelations practices comply with the responsible marketing and public relations policy.",
+                  "guidance": ""
+                },
+                {
+                  "code": "PSG4.2.4",
+                  "text": "The policy is communicated to company workers and available for them to access.",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PSG5",
+          "title": "The company’s social and environmental impact and stakeholder considerations are monitored by the highest governing body and integrated throughout the company.",
+          "subRequirements": [
+            {
+              "code": "PSG5.1",
+              "title": "The highest governing body monitors the company's purpose, social and environmental impact, and stakeholder considerations",
+              "criteria": [
+                {
+                  "code": "PSG5.1.1",
+                  "text": "At least once every 12 months, the highest governing body reviews the company’s:a) progress on advancing its public purpose as defned under PSG1.1b) social and environmental performancec) stakeholder governance implementation",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "PSG5.2",
+              "title": "Requirements to monitor the company's purpose, social and environmental impact, and stakeholder considerations are",
+              "criteria": [
+                {
+                  "code": "PSG5.2.1",
+                  "text": "The highest governing body’s written terms of reference explicitly specify that the highest governing body is responsible for overseeing:a) the company’s public purpose as defned under PSG1.1b) the company’s social and environmental impactc) the company’s consideration of its impact on stakeholders.",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "FW",
+      "name": "Fair Work",
+      "requirements": [
+        {
+          "code": "FW1",
+          "title": "The company sets clear expectations of employees.",
+          "subRequirements": [
+            {
+              "code": "FW1.1",
+              "title": "The company provides all employees a signed employment contract or offer letter.",
+              "criteria": [
+                {
+                  "code": "FW1.1.1",
+                  "text": "All employees have an employment contract or offer letter meeting the following criteria.a) It is written in a language the employee understands.b) It is signed by a company representative and the employee.c) It includes:i) the name of the companyii) the names of both signing partiesiii) the nature and place of the workiv) working hoursv) the base wagevi) any extra wage componentsvii) the work start dateviii) the duration of the workix) conditions for termination.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW1.1.2",
+                  "text": "If an employee is already working without a written contract or offer letter, the company provides a letter that meets the criteria above",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW1.1.3",
+                  "text": "All employees receive a copy of their employment contract or offer letter from the company.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "FW1.2",
+              "title": "The company has equal cancellation periods when using variable schedules.",
+              "criteria": [
+                {
+                  "code": "FW1.2.1",
+                  "text": "If the company uses variable schedules, it has a policy that states the following.a) The specifc cancellation deadline that applies equally to both the company and employee.b) That the company will pay the employee in full when cancelling their work after the deadline for reasons within the company’s control.c) Whether the company will pay the employee, and how much, when canceling their work after the deadline for reasons outside the company’scontrol.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW1.2.2",
+                  "text": "The company makes the policy available to all employees that work variable schedules.",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "FW2",
+          "title": "The company implements fair wage practices.",
+          "subRequirements": [
+            {
+              "code": "FW2.1",
+              "title": "The company has a policy of not requesting wage histories from job applicants.",
+              "criteria": [
+                {
+                  "code": "FW2.1.1",
+                  "text": "The company has a policy or procedure that states it does not ask job applicants to provide:a) their wage historiesb) their preferred wage (unless the company frst shares a wage scale).",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "FW2.2",
+              "title": "The company tells workers how it sets their wage and what benefits they are entitled to.",
+              "criteria": [
+                {
+                  "code": "FW2.2.1",
+                  "text": "The company tells workers about:a) all wage components relevant to themb) all benefts they are entitled toc) the mechanisms it uses for setting and reviewing wages and benefts",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW2.2.2",
+                  "text": "All employees regularly receive payslips or equivalent containing clear information about, at minimum, their:a) base wageb) extra wage componentsc) deductions",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW2.2.3",
+                  "text": "Payslips are written in a language the employee understands.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "FW2.4",
+              "title": "The company calculates its gender wage gap.",
+              "criteria": [
+                {
+                  "code": "FW2.4.1",
+                  "text": "The company has calculated its gender wage gap for each country with at least 250 employees (based on headcount).",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW2.4.2",
+                  "text": "The company has calculated one of the following in the last fscal year.a) average unadjusted gender wage gap at the company level.b) average unadjusted gender wage gap at the occupational level.c) adjusted gender wage gap, with support from a specialist third party.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW2.4.3",
+                  "text": "Wage gap calculations include, at minimum:a) the base wageb) any allowancesc) any bonuses.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW2.4.4",
+                  "text": "Wage gap calculations exclude any:a) overtime payb) expense reimbursementc) non-cash beneftsd) deferred bonuses",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW2.4.5",
+                  "text": "Wage gap calculations use gross fgures (before tax is applied).",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW2.4.1",
+                  "text": "The company has calculated its gender wage gap for each country with at least 250 employees (based on headcount).",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW2.4.2",
+                  "text": "The company has calculated one of the following in the last fscal year.a) average unadjusted gender wage gap at the company level.b) average unadjusted gender wage gap at the occupational level.c) adjusted gender wage gap, with support from a specialist third party",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW2.4.3",
+                  "text": "Wage gap calculations include, at minimum:a) the base wageb) any allowancesc) any bonuses",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW2.4.4",
+                  "text": "Wage gap calculations exclude any:a) overtime payb) expense reimbursementc) non-cash beneftsd) deferred bonuses",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW2.4.5",
+                  "text": "Wage gap calculations use gross fgures (before tax is applied).",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "FW2.5",
+              "title": "The company publicly shares its gender wage gap or gaps.",
+              "criteria": [
+                {
+                  "code": "FW2.5.1",
+                  "text": "The company publicly shares: a) its annual gender wage gap b) the gap for each country with at least 250 employees (based on headcount). c) the methodology it used to calculate its gender wage gap.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW2.5.1",
+                  "text": "The company publicly shares:a) its most recent gender wage gapb) the gap for each country with at least 250 employeesc) the methodology it used to calculate its gender wage gap.",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "FW3",
+          "title": "The company considers feedback from workers on decisions that affect them.",
+          "subRequirements": [
+            {
+              "code": "FW3.2",
+              "title": "The company considers feedback from workers on decisions that affect them.",
+              "criteria": [
+                {
+                  "code": "FW3.2.1",
+                  "text": "The company seeks, considers, and addresses worker feedback on decisions that affect them.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW3.2.2",
+                  "text": "The company seeks feedback from the workers affected by a decision, or their representative.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW3.2.3",
+                  "text": "The company communicates its decision and how it considered feedback back to the relevant workers, or their representative.",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "FW4",
+          "title": "The company measures workplace culture and takes action to improve it.",
+          "subRequirements": [
+            {
+              "code": "FW4.1",
+              "title": "The company measures workplace culture regularly.",
+              "criteria": [
+                {
+                  "code": "FW4.1.1",
+                  "text": "The measurement focuses on outcomes for workers.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW4.1.2",
+                  "text": "The measurement includes at least two of the following themes.a) Satisfactionb) Wellbeingc) Belongingd) Feeling engagede) Being engagedf) Psychological safety",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW4.1.3",
+                  "text": "The company states in its communications about the measurement that participation is optional.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW4.1.4",
+                  "text": "The company completes the measurement:a) in the twelve months before Year 0b) in each subsequent year",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW4.1.5",
+                  "text": "The measurement is done annually.",
+                  "guidance": ""
+                },
+                {
+                  "code": "FW4.1.6",
+                  "text": "If the company has 50 workers or more (based on headcount) then:a) The measurement is both qualitative and quantitative.b) The measurement is anonymous by default. Where anonymity cannot be ensured, the company informs workers.",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "JEDI",
+      "name": "Justice, Equity, Diversity & Inclusion",
+      "requirements": [
+        {
+          "code": "JEDI1",
+          "title": "The company collects data to inform its JEDI actions.",
+          "subRequirements": [
+            {
+              "code": "JEDI1.1",
+              "title": "The company facilitates a discussion or survey about JEDI principles in the workplace.",
+              "criteria": [
+                {
+                  "code": "JEDI1.1.1",
+                  "text": "If the company has more than 10 and fewer than 50 workers (based on headcount), it has facilitated at least one discussion or surveyabout JEDI principles in the workplace:a) in the twelve months before Year 0b) in each subsequent year",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI1.1.2",
+                  "text": "If the company chooses to facilitate a discussion:a) it is at least one hour longb) the company records notes.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI1.1.3",
+                  "text": "If the company has 50 workers or more (based on headcount) it:a) collects data on gender identity or sex at birth for at least fve worker-related measurements.b) disaggregates data to report internally on its chosen worker-related measurements.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI1.1.4",
+                  "text": "Workers provide their data and participate voluntarily, and can choose to remain anonymous",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "JEDI1.2",
+              "title": "The company collects data on one additional social identity for worker-related measurements",
+              "criteria": [
+                {
+                  "code": "JEDI1.2.1",
+                  "text": "The company collects data on one additional social identity (other than gender identity) for at least fve worker-related measurements.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI1.2.2",
+                  "text": "The company uses stakeholder feedback to choose the additional social identity.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI1.2.3",
+                  "text": "Workers provide their social identity voluntarily, and can choose to remain anonymous.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI1.2.4",
+                  "text": "The company disaggregates data to report internally on its chosen worker-related measurements.",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "JEDI2",
+          "title": "The company chooses and implements JEDI actions",
+          "subRequirements": [
+            {
+              "code": "JEDI2.6",
+              "title": "The company chooses its JEDI actions using data and stakeholder feedback, records them in a plan, and implements them.",
+              "criteria": [
+                {
+                  "code": "JEDI2.6.1",
+                  "text": "The company chooses and implements:a) two JEDI actions before Year 0b) seven JEDI actions for Years 3 and 5 each.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.6.2",
+                  "text": "The company chooses at minimum one option from each set across Years 0, 3, and 5.a) Foundation (JEDI2.a-e)b) Within the Workplace (JEDI2.f-l)c) Beyond the Workplace (JEDI2.m-s)",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.6.3",
+                  "text": "The company considers stakeholder feedback and data (from JEDI1) when choosing its actions.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.6.4",
+                  "text": "The company records its actions and status updates in a plan.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.6.5",
+                  "text": "The plan was updated and shared with relevant stakeholders in the last twelve months.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.6.6",
+                  "text": "The company’s plan:a) contains deadlinesb) allocates resourcesc) assigns responsibilities to specifc roles.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.6.7",
+                  "text": "The plan, including status updates, is available for workers to review at any time.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.6.1",
+                  "text": "The company chooses and implements:a) two JEDI actions before Year 0b) seven JEDI actions for Years 3 and 5.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.6.2",
+                  "text": "The company chooses at minimum one option from each set across Years 0, 3, and 5.a) Foundation (JEDI2.a-e)b) Within the Workplace (JEDI2.f-l)c) Beyond the Workplace (JEDI2.m-s",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.6.3",
+                  "text": "The company considers stakeholder feedback and data (from JEDI1) when choosing its actions.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.6.4",
+                  "text": "The company records its actions and status updates in a plan",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.6.5",
+                  "text": "The plan was updated and shared with relevant stakeholders in the last twelve months.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.6.6",
+                  "text": "The company’s plan:a) contains deadlinesb) allocates resourcesc) assigns responsibilities to specifc roles.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.6.7",
+                  "text": "The plan, including status updates, is available for workers to review at any time.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "JEDI2.a",
+              "title": "The company commits publicly to JEDI principles. [Foundation]",
+              "criteria": [
+                {
+                  "code": "JEDI2.a.1",
+                  "text": "The company develops a JEDI commitment statement that:a) is publicb) is approved by the executive team or highest governing bodyc) applies to the company's policies and practices across operations, customers, and community",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.a.2",
+                  "text": "The company assigns accountability for the JEDI commitment to the executive team or highest governing body.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "JEDI2.b",
+              "title": "The company improves JEDI knowledge and capacity among leaders. [Foundation]",
+              "criteria": [
+                {
+                  "code": "JEDI2.b.1",
+                  "text": "The company carries out training or a workshop on JEDI-related topics. At minimum, the training or workshop amounts to one full day perparticipant within a one-year period.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.b.2",
+                  "text": "The company improves the JEDI knowledge or capacity of at least two of the following groups.a) The highest governing bodyb) The executive teamc) Human resourcesd) Training & developmente) Managers",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "JEDI2.c",
+              "title": "The company reviews and updates existing policies using JEDI principles. [Foundation]",
+              "criteria": [
+                {
+                  "code": "JEDI2.c.1",
+                  "text": "The company reviews at least fve policies that affect people using:a) data from JEDI1b) stakeholder feedbackc) its JEDI commitment statement, if applicable (JEDI2.a)d) its improved in-house knowledge or capacity, if applicable (JEDI2.b)",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.c.2",
+                  "text": "The review looks at:a) terminology used in the policiesb) impacts the policies have on peoplec) relationships to JEDI principles",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.c.3",
+                  "text": "Following its review, the company updates the policies if needed.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "JEDI2.d",
+              "title": "The company’s highest governing body and executive team reflect the diversity of its community. [Foundation]",
+              "criteria": [
+                {
+                  "code": "JEDI2.d.1",
+                  "text": "The company chooses three social identities using stakeholder feedback and the demographics of its community.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.d.2",
+                  "text": "The company’s highest governing body and executive team refect the diversity of its community across its three chosen social identities.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.d.3",
+                  "text": "The company calculates the ratios at any point in the last twelve months.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "JEDI2.e",
+              "title": "The company carries out an equity audit. [Foundation]",
+              "criteria": [
+                {
+                  "code": "JEDI2.e.1",
+                  "text": "The company gets a third party with relevant expertise to carry out an equity audit.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.e.2",
+                  "text": "The audit produces a report with a written summary of the audit methodology.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.e.3",
+                  "text": "The equity audit includes feedback from relevant social identity groups.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.e.4",
+                  "text": "The scope of the equity audit includes, at minimum, the company’s:a) workersb) internal and external communicationc) products and services.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.e.5",
+                  "text": "The company publicly shares a summary of the audit results.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.e.6",
+                  "text": "Audit participants can choose to remain anonymous.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "JEDI2.f",
+              "title": "The company supports at least two employee resource or affinity groups. [Within the Workplace]",
+              "criteria": [
+                {
+                  "code": "JEDI2.f.1",
+                  "text": "The company supports at least two employee resource or affnity groups. Each group is associated with a different social identity.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.f.2",
+                  "text": "The company chooses the social identities using worker feedback. '",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.f.3",
+                  "text": "Participation in the groups is optional for workers.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.f.4",
+                  "text": "The company supports the groups.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "JEDI2.g",
+              "title": "The company implements inclusive hiring practices. [Within the Workplace]",
+              "criteria": [
+                {
+                  "code": "JEDI2.g.1",
+                  "text": "The company implements all of the following inclusive hiring practices.a) It includes a JEDI commitment statement in all job postings, aligned with the statement from JEDI2.a (if completed).b) It establishes a policy of not asking for credit checks or criminal records during the application process — unless required by law, or anindustry association or regulator.c) It takes measures to reduce biases or their impacts in hiring processes.d) It analyzes its job description language and requirements to ensure they are inclusive and equitable.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "JEDI2.h",
+              "title": "The company provides sponsorship and mentorship opportunities to workers. [Within the Workplace]",
+              "criteria": [
+                {
+                  "code": "JEDI2.h.1",
+                  "text": "The company provides sponsorship or mentorship opportunities to all employees.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.h.2",
+                  "text": "The company records the formal nature of the sponsorship or mentorship program in a procedure or policy document.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.h.3",
+                  "text": "The sponsorships or mentorships:a) are free for workersb) last six months at minimum.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.h.4",
+                  "text": "The company gives participants time during standard working hours to participate.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.h.5",
+                  "text": "The company tracks participation of two underrepresented groups.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.h.6",
+                  "text": "The company achieves representative participation of at least two underrepresented groups.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "JEDI2.i",
+              "title": "The company develops and implements an inclusive language guide for internal communications. [Within the Workplace]",
+              "criteria": [
+                {
+                  "code": "JEDI2.i.1",
+                  "text": "The company develops an inclusive language guide for internal communications.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.i.2",
+                  "text": "The guide lists terms that should and should not be used.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.i.3",
+                  "text": "One guide exists for each internal communication language.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.i.4",
+                  "text": "The company shares the guide with all workers who produce internal communications.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "JEDI2.j",
+              "title": "The company increases its proportion of workers from underrepresented groups to reflect the diversity of its community. [Within",
+              "criteria": [
+                {
+                  "code": "JEDI2.j.1",
+                  "text": "The company increases the proportion of workers from at least two underrepresented groups to refect the diversity of its community.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.j.2",
+                  "text": "The company calculates the ratios at any point in the last twelve months.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "JEDI2.k",
+              "title": "The company provides additional types of paid leave beyond legal minimums. [Within the Workplace]",
+              "criteria": [
+                {
+                  "code": "JEDI2.k.1",
+                  "text": "The company provides employees at least three of the following types of paid leave.a) Unlimited short-term sick leaveb) Gender affrmation leavec) Personal leaved) Religious or cultural leave chosen by workers individuallye) Parental leave (at least 18 weeks)f) Adoption leave",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.k.2",
+                  "text": "All leave types are fully paid.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.k.3",
+                  "text": "All employees are entitled to the additional types of leave.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.k.4",
+                  "text": "The company uses employee feedback to determine the number of days for each leave type.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.k.5",
+                  "text": "The company records the chosen types of leave in a policy document or documents that are:a) shared with all employeesb) available to read at all times.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "JEDI2.l",
+              "title": "The company’s internal communication tools meet accessibility standards. [Within the Workplace]",
+              "criteria": [
+                {
+                  "code": "JEDI2.l.1",
+                  "text": "The company assesses the accessibility of its digital internal communication tools.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.l.1",
+                  "text": "The assessment:a) confrms the tools meet the AA or AAA criteria of the Web Content Accessibility Guidelines (WCAG)b) is carried out by an internal or external specialistc) includes manual testingd) includes feedback from people with disabilities.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "JEDI2.m",
+              "title": "The company’s website meets accessibility standards. [Beyond the Workplace]",
+              "criteria": [
+                {
+                  "code": "JEDI2.m.1",
+                  "text": "The company assesses the accessibility of its public-facing website.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.m.2",
+                  "text": "The assessment:a) confrms the website meets the AA or AAA criteria of the Web Content Accessibility Guidelines (WCAG)b) is carried out by an internal or external specialistc) includes manual testingd) includes feedback from people with disabilities",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "JEDI2.n",
+              "title": "The company communicates its JEDI action plan and progress publicly. [Beyond the Workplace]",
+              "criteria": [
+                {
+                  "code": "JEDI2.n.1",
+                  "text": "The company communicates its JEDI action plan and progress publicly, once per year at minimum.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "JEDI2.o",
+              "title": "The company promotes diversity among its local suppliers. [Beyond the Workplace]",
+              "criteria": [
+                {
+                  "code": "JEDI2.o.1",
+                  "text": "The company implements all of the following actions.a) It tracks diversity of ownership among its local suppliers.b) It establishes a policy to give preferences to local suppliers owned by persons from underrepresented groups.c) It sets targets to purchase a percentage of goods and services from local suppliers owned by persons from underrepresented groups",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "JEDI2.p",
+              "title": "The company develops and implements an inclusive communications and ethical content guide for external communications.",
+              "criteria": [
+                {
+                  "code": "JEDI2.p.1",
+                  "text": "The company develops a communications and ethical content guide that:a) lists terms that should and should not be used for each external communication languageb) describes how to gather, manage, and use content ethicallyc) sets expectations for representing social identitiesd) is shared with all workers who produce external communications",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.p.2",
+                  "text": "If the company uses artifcial intelligence for creative content generation, it includes its use in the guide.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "JEDI2.q",
+              "title": "The company assesses how inclusive a product or service is. [Beyond the Workplace]",
+              "criteria": [
+                {
+                  "code": "JEDI2.q.1",
+                  "text": "The company uses stakeholder feedback to assess a product or service for inclusivity.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.q.2",
+                  "text": "The assessment highlights:a) which specifc social identity groups may experience barriers when accessing the product or serviceb) what those barriers are.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "JEDI2.r",
+              "title": "The company redesigns a product or service to be more inclusive. [Beyond the Workplace]",
+              "criteria": [
+                {
+                  "code": "JEDI2.r.1",
+                  "text": "The company uses stakeholder feedback to redesign one of its products or services to be more inclusive.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.r.2",
+                  "text": "The company redesigns the original product or service, rather than designing a segregation solution.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.r.3",
+                  "text": "The company offers the redesigned product or service to customers or announces it publicly.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "JEDI2.s",
+              "title": "The company takes part in at least one collective action to advance JEDI principles. [Beyond the Workplace]",
+              "criteria": [
+                {
+                  "code": "JEDI2.s.1",
+                  "text": "The company engages in at least one collective action initiative at the policy, industry, or business community level to advance JEDIprinciples",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.s.2",
+                  "text": "The initiative has a clear, shared purpose and goal, to:a) achieve systems change or transformationb) collaboratively deliver specifc, measurable impacts.",
+                  "guidance": ""
+                },
+                {
+                  "code": "JEDI2.s.3",
+                  "text": "The company makes a clear contribution to delivering the initiative",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "HR",
+      "name": "Human Rights",
+      "requirements": [
+        {
+          "code": "HR1",
+          "title": "The company commits publicly to respecting human rights.",
+          "subRequirements": [
+            {
+              "code": "HR1.2",
+              "title": "The company has a public human rights policy.",
+              "criteria": [
+                {
+                  "code": "HR1.2.1",
+                  "text": "The company has a public human rights policy",
+                  "guidance": ""
+                },
+                {
+                  "code": "HR1.2.2",
+                  "text": "The policy includes commitments to:a) respect human rights.b) assess the company’s potential negative human rights impacts (or human rights risks)c) remediate the negative impacts the company has caused or contributed tod) each of the followingi) UN Guiding Principles on Business and Human Rights;ii) International Bill of Rights or the rights under the Universal Declaration of Human Rights;iii) International Labour Organization’s (ILO) Declaration on Fundamental Principles and Rights at Work.",
+                  "guidance": ""
+                },
+                {
+                  "code": "HR1.2.3",
+                  "text": "The policy is approved by the highest governing body",
+                  "guidance": ""
+                },
+                {
+                  "code": "HR1.2.4",
+                  "text": "The policy’s scope covers all individuals and communities affected by the company’s own operations and its value chain.",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "HR2",
+          "title": "The company knows its salient human rights issues and has a strategy to address them.",
+          "subRequirements": [
+            {
+              "code": "HR2.1",
+              "title": "The company identifies its salient human rights issues.",
+              "criteria": [
+                {
+                  "code": "HR2.1.1",
+                  "text": "The company assesses human rights issues to identify which are salient to its operations and value chain. The assessment:a) is based on desk research and stakeholder engagementb) identifes risks to people (rather than risks to the company)c) identifes both actual and potential negative impacts (not positive impacts)d) identifes specifc human rights issuese) specifes where the issues are most salientf) prioritizes issues based on their severity and likelihood.",
+                  "guidance": ""
+                },
+                {
+                  "code": "HR2.1.2",
+                  "text": "The assessment scope covers all individuals and communities affected by the company’s operations and value chain.",
+                  "guidance": ""
+                },
+                {
+                  "code": "HR2.1.3",
+                  "text": "The assessment was completed or updated in the last 36 months.",
+                  "guidance": ""
+                },
+                {
+                  "code": "HR2.1.4",
+                  "text": "The company considers any “potential impacts” from the Risk Tool (FR3.1) in its assessment.",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "HR3",
+          "title": "The company prevents, mitigates, and remediates actual and potential negative human rights impacts.",
+          "subRequirements": [
+            {
+              "code": "HR3.1",
+              "title": "The company has a process to collect, prioritize, and escalate information on actual and potential negative human rights impacts.",
+              "criteria": [
+                {
+                  "code": "HR3.1.1",
+                  "text": "The company has a process to collect, prioritize, and escalate information on actual and potential negative human rights impacts.",
+                  "guidance": ""
+                },
+                {
+                  "code": "HR3.1.2",
+                  "text": "The company has clear roles and responsibilities related to this process.",
+                  "guidance": ""
+                },
+                {
+                  "code": "HR3.1.3",
+                  "text": "In the process, impacts are prioritized and escalated based on their severity and likelihood.",
+                  "guidance": ""
+                },
+                {
+                  "code": "HR3.1.4",
+                  "text": "The process also sets out:a) when and how to seek additional information about an actual or potential negative impact, and how to involve stakeholders, includingaffected stakeholdersb) what kinds of internal changes at the company will prompt it to proactively assess potential negative impacts.",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "HR4",
+          "title": "The company works with suppliers to achieve its human rights objectives.",
+          "subRequirements": [
+            {
+              "code": "HR4.4",
+              "title": "The company works with suppliers to prevent or mitigate the most salient human rights issues.",
+              "criteria": [
+                {
+                  "code": "HR4.4.1",
+                  "text": "The company:a) identifes prioritized suppliers related to its salient human rights issues (HR2.1)b) records the criteria it used to prioritize suppliers.",
+                  "guidance": ""
+                },
+                {
+                  "code": "HR4.4.2",
+                  "text": "The company works with its prioritized suppliers to prevent or mitigate their most material human rights impacts bya) agreeing on targets with each prioritized supplierb) monitoring progress at least annually",
+                  "guidance": ""
+                },
+                {
+                  "code": "HR4.4.3",
+                  "text": "For Years 3 and 5, the company records specifc prevention and mitigation actions and their outcomes",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CA",
+      "name": "Climate Action",
+      "requirements": [
+        {
+          "code": "CA1",
+          "title": "The company has a process to measure its greenhouse gas emissions annually.",
+          "subRequirements": [
+            {
+              "code": "CA1.1",
+              "title": "The company has a documented process to measure its scope 1, 2 and 3 greenhouse gas emissions annually and discloses the results publicly.",
+              "criteria": [
+                {
+                  "code": "CA1.1.1",
+                  "text": "The company’s greenhouse gas (GHG) emissions inventory is publicly available:a) in the fscal year before Year 0b) in each subsequent year.",
+                  "guidance": ""
+                },
+                {
+                  "code": "CA1.1.2",
+                  "text": "The company’s process includes the measurement of GHG the following.a) Gross scope 1 GHGs (in metric tonnes of CO2 equivalent)b) Gross location-based scope 2 GHGs (in metric tonnes of CO2 equivalent)c) Gross market-based scope 2 GHGs (in metric tonnes of CO2 equivalent)d) Gross scope 3 GHGs (in metric tonnes of CO2 equivalent) from all relevant scope 3 categoriese) GHG emissions in each relevant scope 3 categoryf) Total GHG emissions (in metric tonnes of CO2 equivalent), including both:i) the total GHG emissions calculated using a location-based method for scope 2 GHGsii) the total GHG emissions calculated using a market-based method for scope 2 GHGs.",
+                  "guidance": ""
+                },
+                {
+                  "code": "CA1.1.3",
+                  "text": "The company records a list of Scope 3 GHG emissions categories included in and excluded from the GHG inventory with a justifcationfor excluded Scope 3 categories.",
+                  "guidance": ""
+                },
+                {
+                  "code": "CA1.1.4",
+                  "text": "The company details the use of accounting principles and tools that it follows to measure its emissions and any associated assumptions.a) The company uses accounting principles and tools that follow GHG Protocol requirements to measure emissions.b) Equity investors and investment advisors follow the methodology of the Global GHG Accounting and Reporting Standard for the FinancialIndustry (Partnership for Carbon Accounting Financials).",
+                  "guidance": ""
+                },
+                {
+                  "code": "CA1.1.5",
+                  "text": "The company calculates its GHG emissions using either:a) a publicly or commercially available tool,b) an in-house tool that uses emission factors from nationally or internationally recognized databases.",
+                  "guidance": ""
+                },
+                {
+                  "code": "CA1.1.1",
+                  "text": "The company’s greenhouse gas (GHG) emissions inventory is publicly available: a) in the fscal year before Year 0 b) in each subsequent year",
+                  "guidance": ""
+                },
+                {
+                  "code": "CA1.1.2",
+                  "text": "The company’s process includes the measurement of GHG the following.a) Gross scope 1 GHGs (in metric tonnes of CO2 equivalent)b) Gross location-based scope 2 GHGs (in metric tonnes of CO2 equivalent)c) Gross market-based scope 2 GHGs (in metric tonnes of CO2 equivalent)d) Gross scope 3 GHGs (in metric tonnes of CO2 equivalent) from all relevant scope 3 categoriese) GHG emissions in each relevant scope 3 categoryf) Total GHG emissions (in metric tonnes of CO2 equivalent), including both:i) the total GHG emissions calculated using a location-based method for scope 2 GHGsii) the total GHG emissions calculated using a market-based method for scope 2 GHGs.",
+                  "guidance": ""
+                },
+                {
+                  "code": "CA1.1.3",
+                  "text": "The company records a list of Scope 3 GHG emissions categories included in and excluded from the GHG inventory with a justifcationfor excluded Scope 3 categories.",
+                  "guidance": ""
+                },
+                {
+                  "code": "CA1.1.4",
+                  "text": "The company details the use of accounting principles and tools that it follows to measure its emissions and any associated assumptions.a) The company uses accounting principles and tools that follow the methodology of the GHG Protocol or ISO 14064-1:2018 to measureemissions.b) Equity investors and investment advisors follow the methodology of the Global GHG Accounting and Reporting Standard for the FinancialIndustry (Partnership for Carbon Accounting Financials).",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "CA1.2",
+              "title": "The company gets an independent third party to verify its annual greenhouse gas emissions inventory.",
+              "criteria": [
+                {
+                  "code": "CA1.2.1",
+                  "text": "The company’s annual greenhouse gas (GHG) emissions inventory is verifed by an accredited and independent third party:a) in the fscal year before Year 0b) in each subsequent year.",
+                  "guidance": ""
+                },
+                {
+                  "code": "CA1.2.2",
+                  "text": "The independent third party verifes that the company’s GHG emissions inventory:a) covers scope 1 and 2 emissions and all relevant categories of scope 3 emissionsb) is complete and accuratec) meets GHG Protocol requirements.",
+                  "guidance": ""
+                },
+                {
+                  "code": "CA1.2.1",
+                  "text": "The company’s annual greenhouse gas (GHG) emissions inventory is verifed by an accredited and independent third party:a) in the fscal year before Year 0b) in each subsequent year.",
+                  "guidance": ""
+                },
+                {
+                  "code": "CA1.2.2",
+                  "text": "The independent third party verifes that the company’s GHG emissions inventory:a) covers scope 1 and 2 emissions and all relevant categories of scope 3 emissionsb) follows the methodology outlined under CA1.1.4.",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ESC",
+      "name": "Environmental Stewardship & Circularity",
+      "requirements": [
+        {
+          "code": "ESC1",
+          "title": "The company knows its actual and potential impacts on the environment.",
+          "subRequirements": [
+            {
+              "code": "ESC1.1",
+              "title": "The company monitors waste production from its operations and where it ends up.",
+              "criteria": [
+                {
+                  "code": "ESC1.1.1",
+                  "text": "The company measures and records its annual hazardous and non-hazardous waste production:a) in the last fscal yearb) in each subsequent year.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.1.2",
+                  "text": "The company’s non-hazardous waste is measured in tonnes and recorded as:a) the total amount of waste generatedb) the amount of non-hazardous waste diverted from disposal, and how much is:i) prepared for reuseii) recyclediii) recovered in another way.c) the amount of non-hazardous waste disposed of, including by:i) incineration (without energy recovery)ii) landfllingiii) other disposal methods",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.1.3",
+                  "text": "The company’s hazardous waste is measured in tonnes and recorded as:a) the total amount of hazardous waste generatedb) the amount of hazardous waste diverted from disposal, and how much is:i) recycledii) recovered in another wayc) the amount of hazardous waste disposed of, including by:i) incineration (without energy recovery)ii) landfllingiii) other disposal methods",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.1.4",
+                  "text": "If the company produces or trades food products it also measures (in tonnes):a) the total amount of food waste generatedb) the amount of food waste diverted from disposal, and how much is:i) re-used for human consumption or animal feedii) recycled or reused by-productsiii) used in energy recovery;iv) recovered in another wayc) the amount of food waste disposed of, including by:i) incineration (without energy recovery)ii) landfllingiii) other disposal methods.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.1.5",
+                  "text": "If the company cannot confrm where its waste goes, it assumes the waste goes to landfll.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.1.6",
+                  "text": "Before Year 0, the company:a) tracks and records waste generation for all of its facilities identifed as material in accordance with ESC1.7b) has a plan to extend the tracking and recording of waste generation to all remaining facilities.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.1.7",
+                  "text": "For Year 5, the company has completed the tracking and recording of waste generation for all facilities.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "ESC1.2",
+              "title": "The company monitors its energy use.",
+              "criteria": [
+                {
+                  "code": "ESC1.2.1",
+                  "text": "The company measures and records its annual energy use:a) in the last fscal yearb) in each subsequent year.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.2.2",
+                  "text": "The company’s energy use is measured by:a) total energy in giga-joules, watt-hours or multiplesb) total renewable energy in giga-joules, watt-hours or multiplesc) percentage of self-generated renewable energyd) percentage of renewable electricitye) energy intensity, as either:i) total energy use per $million of revenueii) total energy use per unit of product or service.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.2.3",
+                  "text": "Before Year 0, the company:a) tracks and records energy use for all of its facilities identifed as material in accordance with ESC1.7b) has a plan to extend the tracking and recording of energy use to all remaining facilities.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.2.4",
+                  "text": "For Year 5, the company completes the tracking and recording of energy use for all facilities.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "ESC1.3",
+              "title": "The company monitors its water consumption or withdrawal.",
+              "criteria": [
+                {
+                  "code": "ESC1.3.1",
+                  "text": "The company measures and records its annual water consumption or withdrawal:a) in the last fscal yearb) in each subsequent year.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.3.2",
+                  "text": "The company’s water consumption or withdrawal is measured by:a) total water consumption or withdrawal in cubic meters (m3)b) total water recycled and reused in m3c) water intensity, as either:i) total water consumption or withdrawal in its own facilities in m3 per $million of revenueii) total water consumption or withdrawal in its facilities in m3 per unit of product",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.3.3",
+                  "text": "The company explains why it chose to measure either water consumption or withdrawal.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.3.4",
+                  "text": "Before Year 0, the company:a) tracks and records water consumption or withdrawal for all of its facilities identifed as material in accordance with ESC1.7b) has a plan to extend the tracking and recording of water consumption or withdrawal to all remaining facilities",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.3.5",
+                  "text": "For Year 5, the company completes the tracking and recording of water consumption or withdrawal for all facilities.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "ESC1.4",
+              "title": "The company identifies its facilities in areas at water risk and monitors their water consumption or withdrawal.",
+              "criteria": [
+                {
+                  "code": "ESC1.4.1",
+                  "text": "The company identifes any of its facilities in areas at physical water risk.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.4.2",
+                  "text": "Before Year 0, the company:a) tracks and records water consumption or withdrawal for any of its facilities in areas at physical water risk identifed as material in accordancewith ESC1.7b) has a plan to extend the tracking and recording of water consumption or withdrawal to all remaining facilities in areas at physical water risk.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.4.3",
+                  "text": "For Year 5, the company has completed the tracking and recording of water consumption or withdrawal for all facilities in areas of physicalwater risk.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.4.4",
+                  "text": "The company has measured and recorded its annual water consumption or withdrawal in cubic meters (m3) in areas at physical water risk:a) in the last fscal yearb) in each subsequent year.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "ESC1.6",
+              "title": "The company monitors the animal welfare conditions in its operations.",
+              "criteria": [
+                {
+                  "code": "ESC1.6.1",
+                  "text": "The company defines indicators to monitor animal welfare conditions. The indicators in its monitoring process relate to how the animalsare:a) raisedb) transportedc) slaughtered.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.6.2",
+                  "text": "The company monitors the fve freedoms of animal welfare.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.6.3",
+                  "text": "The company creates an annual aggregate summary of animal welfare conditions:a) in the fscal year before Year 0b) in each subsequent year.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.6.4",
+                  "text": "The company meets any applicable laws regarding animal welfare (both general and species-specifc).",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "ESC1.7",
+              "title": "The company conducts an assessment to identify actual and potential environmental impacts connected to its operations and",
+              "criteria": [
+                {
+                  "code": "ESC1.7.1",
+                  "text": "The company’s assessment:a) covers the company’s operations and value chainb) identifes any actual or potential negative impacts of the company's operations and value chain that may contribute to the fve drivers ofnature changec) identifes any actual or potential negative impacts of the company's operations and value chain on animal welfared) is based on internal and external research, and engagement with stakeholderse) prioritizes issues based on severity and likelihood.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.7.2",
+                  "text": "The assessment includes:a) a high level overview of the company's value chain indicating where actual or potential negative impacts on nature and animal welfarehave been identifedb) a list of prioritized value chain activities and company operations that contribute to negative impacts on naturec) a list of high impact commodities or products in the supply chain, and an explanation of how they were identifedd) a list of prioritized material environmental impact areas.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.7.3",
+                  "text": "The assessment was completed or updated in the last three years",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.7.4",
+                  "text": "If water, biodiversity, and waste were not deemed material, the company records a written explanation why. The written explanation:a) includes credible scientifc evidenceb) is approved by the highest governing body or executive team.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC1.7.5",
+                  "text": "The company considers any “potential impacts” from the Risk Tool (FR3.1) in its assessment.",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "ESC3",
+          "title": "The company implements circularity principles to reduce waste and its impact on natural resources.",
+          "subRequirements": [
+            {
+              "code": "ESC3.1",
+              "title": "The company monitors its material inflow.",
+              "criteria": [
+                {
+                  "code": "ESC3.1.1",
+                  "text": "The company has an overview of its material infow indicators (see Compliance Criteria 3.1.2 & 3.1.3), separated by products and packaging,for:a) the fscal year before Year 0b) each subsequent year.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC3.1.2",
+                  "text": "The company’s overview includes the following information about its products (in tonnes).a) The total weight of input materials used to manufacture the company’s products (excluding packaging)b) The amount of renewable input materials from third-party verifed, sustainable sources used to manufacture the company’s products(excluding packaging), by weight and as a percentage of total input materialsc) The amount of reused or recycled products and materials (non-virgin) used to manufacture the company’s products (excluding packaging),by weight and as a percentage of total input materials",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC3.1.3",
+                  "text": "The company’s overview includes the following information about its packaging (in tonnes).a) The total weight of input materials used to manufacture packaging for the company’s productsb) The amount of renewable input materials from third-party verifed, sustainable sources used to manufacture packaging for the company’sproducts, by weight and as a percentage of total input materials used to manufacture packaging for the company’s productsc) The amount of reused or recycled products and materials (non-virgin) used to manufacture packaging for the company’s products, byweight and as a percentage of total input materials used to manufacture packaging for the company’s products",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC3.1.1",
+                  "text": "The company has an overview of its material infow indicators, separated by products and packaging, for:a) the fscal year before Year 0b) each subsequent year.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC3.1.2",
+                  "text": "The company’s overview includes the following information about its products (in tonnes).a) The total weight of input materials used to manufacture the company’s products (excluding packaging)b) The amount of renewable input materials from third-party verifed, sustainable sources used to manufacture the company’s products(excluding packaging), by weight and as a percentage of total input materialsc) The amount of reused or recycled products and materials (non-virgin) used to manufacture the company’s products (excluding packaging),by weight and as a percentage of total input materials",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC3.1.3",
+                  "text": "The company’s overview includes the following information about its packaging (in tonnes).a) The total weight of input materials used to manufacture packaging for the company’s productsb) The amount of renewable input materials from third-party verifed, sustainable sources used to manufacture packaging for the company’sproducts, by weight and as a percentage of total input materials used to manufacture packaging for the company’s productsc) The amount of reused or recycled products and materials (non-virgin) used to manufacture packaging for the company’s products, byweight and as a percentage of total input materials used to manufacture packaging for the company’s products",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "ESC3.4",
+              "title": "The company understands the recovery infrastructure available where it sells its products.",
+              "criteria": [
+                {
+                  "code": "ESC3.4.1",
+                  "text": "The company conducts and records an analysis of available recovery infrastructure for its products and packaging after their end-of-life.The analysis:a) covers all the company’s material products and packagingb) includes 25% of countries where the company’s products are sold at minimumc) is based on desk research or stakeholder engagementd) identifes the recovery infrastructure challenges for each included country.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC3.4.2",
+                  "text": "The analysis produces a document that summarizes the company’s methodology.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC3.4.3",
+                  "text": "The analysis was either completed or updated in the last 36 months.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC3.4.4",
+                  "text": "For each update, the company increases the extent of coverage of the analysis (measured as a percentage of aggregate production andnumber of countries) as compared to the previous analysis.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC3.4.1",
+                  "text": "The company conducts and records an analysis of available recovery infrastructure for its products and packaging after their end-of-life.The analysis:a) covers all the company’s material products and packagingb) includes 25% of countries where the company’s products are sold at minimumc) is based on desk research or stakeholder engagementd) identifes the recovery infrastructure challenges for each included country",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC3.4.2",
+                  "text": "The analysis produces a document that summarizes the company’s methodology.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC3.4.3",
+                  "text": "The analysis was either completed or updated in the last three years.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC3.4.4",
+                  "text": "For each update, the company increases the extent of coverage of the analysis (measured as a percentage of aggregate production andnumber of countries) as compared to the previous analysis.",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "ESC5",
+          "title": "The company works with suppliers to achieve its environmental objectives.",
+          "subRequirements": [
+            {
+              "code": "ESC5.3",
+              "title": "The company works with suppliers to prevent or mitigate their most material environmental impacts.",
+              "criteria": [
+                {
+                  "code": "ESC5.3.1",
+                  "text": "The company:a) identifes prioritized suppliers related to its most material environmental impacts (ESC1.7)b) records the criteria it used to prioritize suppliers.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC5.3.2",
+                  "text": "The company works with its prioritized suppliers to prevent or mitigate their most material environmental impacts bya) agreeing on targets with each prioritized supplierb) monitoring progress at least annually",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC5.3.3",
+                  "text": "For Years 3 and 5, the company records specifc prevention and mitigation actions and their outcomes.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC5.3.1",
+                  "text": "The company:a) identifes prioritized suppliers related to its most material environmental impacts (ESC1.7)b) records the criteria it used to prioritize suppliers.",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC5.3.2",
+                  "text": "The company works with its prioritized suppliers to prevent or mitigate their most material environmental impacts bya) agreeing on targets with each prioritized supplierb) monitoring progress at least annually",
+                  "guidance": ""
+                },
+                {
+                  "code": "ESC5.3.3",
+                  "text": "For Years 3 and 5, the company records specifc prevention and mitigation actions and their outcomes",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "GACA",
+      "name": "Government Affairs & Collective Action",
+      "requirements": [
+        {
+          "code": "GACA1",
+          "title": "The company takes a responsible and transparent approach to lobbying.",
+          "subRequirements": [
+            {
+              "code": "GACA1.1",
+              "title": "The company has a public policy on responsible lobbying.",
+              "criteria": [
+                {
+                  "code": "GACA1.1.1",
+                  "text": "If the company is not engaged in lobbying, then it meets this sub-requirement by declaring this publicly",
+                  "guidance": ""
+                },
+                {
+                  "code": "GACA1.1.2",
+                  "text": "The company’s lobbying policy states its approach to responsible lobbying, including:a) a statement that the company will lobby only to contribute to a positive impact on society or the environmentb) a statement that its lobbying approach is based on either reliable or scientifc data (or both)c) its approach to fnancial and in-kind political contributionsd) its approach to anti-corruption and briberye) its approach to responsible lobbying with intermediary organizations, including controls that ensure consistency with the lobbying policyf) which governance body within the company will formally review and approve the policy, and how frequently.",
+                  "guidance": ""
+                },
+                {
+                  "code": "GACA1.1.3",
+                  "text": "The company’s lobbying policy states its governance, control, and risk management practices, including:a) which governance body or executive-level position within the company is accountable for enforcing the policyb) how the policy is embedded within the company, including how the company puts it into practicec) how the company identifes, manages, and monitors risks of non-complianced) how the company evaluates compliance with the governance and control frameworke) how stakeholders can raise concerns about the company’s business conduct and lobbying practices, including reference to the company’sgrievance procedure [link to PSG3].",
+                  "guidance": ""
+                },
+                {
+                  "code": "GACA1.1.4",
+                  "text": "The company’s lobbying policy is:a) approved by the highest governing bodyb) published on the company’s webpage and accessible to all stakeholders",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "GACA1.2",
+              "title": "The company publicly shares its lobbying positions and political contributions each fiscal year.",
+              "criteria": [
+                {
+                  "code": "GACA1.2.1",
+                  "text": "If the company is not engaged in lobbying, then it meets this sub-requirement by publicly sharing that it is not engaged in lobbying.",
+                  "guidance": ""
+                },
+                {
+                  "code": "GACA1.2.2",
+                  "text": "The public report includes:a) the value and recipient of fnancial and in-kind political contributionsb) a summary of the company’s material lobbying positions and the relevant recipients or intermediary organizations.",
+                  "guidance": ""
+                },
+                {
+                  "code": "GACA1.2.3",
+                  "text": "The public report is:a) overseen by the highest governing body or a committee of the highest governing bodyb) published on the company’s webpage and accessible to all stakeholders.",
+                  "guidance": ""
+                },
+                {
+                  "code": "GACA1.2.4",
+                  "text": "The company publicly shares its lobbying positions and political contributions:a) in the fscal year before Year 0b) annually in each subsequent year.",
+                  "guidance": ""
+                },
+                {
+                  "code": "GACA1.2.1",
+                  "text": "If the company is not engaged in lobbying, then it meets this sub-requirement by publicly sharing that it is not engaged in lobbying.",
+                  "guidance": ""
+                },
+                {
+                  "code": "GACA1.2.2",
+                  "text": "The public report includes:a) the value and recipient of fnancial and in-kind political contributionsb) a summary of the company’s material lobbying positions and the relevant recipients or intermediary organizations.",
+                  "guidance": ""
+                },
+                {
+                  "code": "GACA1.2.3",
+                  "text": "The public report is:a) overseen by the highest governing body or a committee of the highest governing bodyb) published on the company’s webpage and accessible to all stakeholders.",
+                  "guidance": ""
+                },
+                {
+                  "code": "GACA1.2.4",
+                  "text": "The company publicly shares its lobbying positions and political contributions:a) in the fscal year before Year 0b) annually in each subsequent year.",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "GACA2",
+          "title": "The company works collaboratively to advance collective social or environmental impacts.",
+          "subRequirements": [
+            {
+              "code": "GACA2.3a",
+              "title": "The company mentors others in its industry, profession, or value chain to advance their social or environmental impacts.",
+              "criteria": [
+                {
+                  "code": "GACA2.3a.1",
+                  "text": "The company’s mentoring has:a) a clear objective aligned with advancing the mentee’s social or environmental impactb) a clear positive outcome that the mentee confrmsc) a systematic approach targeting a specifc group of mentees.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "GACA2.3b",
+              "title": "The company contributes to external research to advance social or environmental impacts.",
+              "criteria": [
+                {
+                  "code": "GACA2.3b.1",
+                  "text": "The external research aims to create a positive impact on society or the environment.",
+                  "guidance": ""
+                },
+                {
+                  "code": "GACA2.3b.2",
+                  "text": "The company contributes to research through:a) fnancial contributionsb) in-kind contributionsc) data sharing.",
+                  "guidance": ""
+                },
+                {
+                  "code": "GACA2.3b.3",
+                  "text": "The company follows up on the output of the research within twelve months.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "GACA2.3c",
+              "title": "The company collaborates with multiple stakeholders to advance social or environmental impacts with clear contribution.",
+              "criteria": [
+                {
+                  "code": "GACA2.3c.1",
+                  "text": "The multi-stakeholder collaboration:a) has a clear purpose and aims to deliver specifc, measurable impacts collaboratively.b) aims to create a positive impact on society or the environment.",
+                  "guidance": ""
+                },
+                {
+                  "code": "GACA2.3c.2",
+                  "text": "The company makes a clear contribution to the multi-stakeholder collaboration.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "GACA2.3d",
+              "title": "The company promotes public policy to advance social or environmental impacts with clear contribution.",
+              "criteria": [
+                {
+                  "code": "GACA2.3d.1",
+                  "text": "The advocacy work aims to create a positive impact on society or the environment.",
+                  "guidance": ""
+                },
+                {
+                  "code": "GACA2.3d.2",
+                  "text": "The company has one or more resources to support its public policy advocacy work:a) fnancial contributionsb) in-kind contributionc) active staff time.",
+                  "guidance": ""
+                },
+                {
+                  "code": "GACA2.3d.3",
+                  "text": "The company makes a clear contribution to public policy advocacy",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "GACA2.3e",
+              "title": "The company uses thought leadership to drive systemic change towards an equitable, inclusive, and regenerative economy,",
+              "criteria": [
+                {
+                  "code": "GACA2.3e.1",
+                  "text": "The thought leadership:a) has a clear positive outcomeb) aims to create a positive impact on society or the environment.",
+                  "guidance": ""
+                },
+                {
+                  "code": "GACA2.3e.2",
+                  "text": "The company is involved in at least:a ) two thought leadership practices before Year 0b) three thought leadership practices for Years 3 and 5.",
+                  "guidance": ""
+                }
+              ]
+            },
+            {
+              "code": "GACA2.4",
+              "title": "The company takes part in collective action to advance social or environmental impacts.",
+              "criteria": [
+                {
+                  "code": "GACA2.4.1",
+                  "text": "The company takes part in collective action from the fve options in this Impact Topic.a) GACA2.3a The company mentors others in its industry, profession, or value chain to advance their social or environmental impacts.b) GACA2.3b The company contributes to external research to advance social or environmental impacts.c) GACA2.3c The company collaborates with multiple stakeholders to advance social or environmental impacts with clear contribution.d) GACA2.3d The company promotes public policy to advance social or environmental impacts with clear contribution.e) GACA2.3e The company uses thought leadership to drive systemic change towards an equitable, inclusive, and regenerative economy,and has a clear outcome.",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "GACA3",
+          "title": "The company takes a responsible and transparent approach to taxes.",
+          "subRequirements": [
+            {
+              "code": "GACA2.4",
+              "title": "The company takes part in collective action to advance social or environmental impacts.",
+              "criteria": [
+                {
+                  "code": "GACA2.4.2",
+                  "text": "The company takes part in at least two of the fve collective action options.",
+                  "guidance": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
