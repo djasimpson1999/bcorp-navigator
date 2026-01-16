@@ -41,8 +41,15 @@ export default function Home() {
     company: "",
     employees: "",
     revenue: "",
-    industry: "",
   });
+  
+  // Industry questionnaire state
+  const [q1PhysicalProducts, setQ1PhysicalProducts] = useState<boolean | null>(null);
+  const [q2PhysicalLocations, setQ2PhysicalLocations] = useState<boolean | null>(null);
+  const [q3Manufactures, setQ3Manufactures] = useState<boolean | null>(null);
+  const [q4Agriculture, setQ4Agriculture] = useState<boolean | null>(null);
+  const [determinedIndustry, setDeterminedIndustry] = useState<string | null>(null);
+
   const [requirements, setRequirements] = useState<RequirementsData | null>(null);
   const [selectedTopic, setSelectedTopic] = useState<ImpactTopic | null>(null);
   const [selectedReq, setSelectedReq] = useState<Requirement | null>(null);
@@ -59,6 +66,61 @@ export default function Home() {
     e.preventDefault();
     setStep(step + 1);
   };
+
+  // Determine industry based on answers
+  useEffect(() => {
+    // If Q4 is yes at any point, it's agriculture
+    if (q4Agriculture === true) {
+      setDeterminedIndustry("agriculture");
+      return;
+    }
+
+    // Q1: No, Q2: No → Services Minor
+    if (q1PhysicalProducts === false && q2PhysicalLocations === false) {
+      setDeterminedIndustry("services-minor");
+      return;
+    }
+
+    // Q1: No, Q2: Yes → Services Significant
+    if (q1PhysicalProducts === false && q2PhysicalLocations === true) {
+      setDeterminedIndustry("services-significant");
+      return;
+    }
+
+    // Q1: Yes, Q2: No, need Q3 and Q4
+    if (q1PhysicalProducts === true && q2PhysicalLocations === false) {
+      // Q3: Yes, Q4: No → Manufacturing
+      if (q3Manufactures === true && q4Agriculture === false) {
+        setDeterminedIndustry("manufacturing");
+        return;
+      }
+      // Q3: No, Q4: No → Wholesale/Retail
+      if (q3Manufactures === false && q4Agriculture === false) {
+        setDeterminedIndustry("wholesale-retail");
+        return;
+      }
+    }
+
+    // Q1: Yes, Q2: Yes, need Q3 and Q4
+    if (q1PhysicalProducts === true && q2PhysicalLocations === true) {
+      // Q3: Yes, Q4: No → Manufacturing
+      if (q3Manufactures === true && q4Agriculture === false) {
+        setDeterminedIndustry("manufacturing");
+        return;
+      }
+      // Q3: No, Q4: No → Wholesale/Retail
+      if (q3Manufactures === false && q4Agriculture === false) {
+        setDeterminedIndustry("wholesale-retail");
+        return;
+      }
+    }
+
+    // Not yet determined
+    setDeterminedIndustry(null);
+  }, [q1PhysicalProducts, q2PhysicalLocations, q3Manufactures, q4Agriculture]);
+
+  // Check if we need to show Q3 and Q4
+  const showQ3Q4 = q1PhysicalProducts === true && q2PhysicalLocations !== null;
 
   const getSizeTrack = () => {
     const sizeOrder = ["no-workers", "micro", "small", "medium", "large", "xlarge", "xxlarge"];
@@ -86,10 +148,17 @@ export default function Home() {
       : revenueSize;
   };
 
+  const handleSubmitIndustry = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (determinedIndustry) {
+      setStep(3);
+    }
+  };
+
   useEffect(() => {
     if (step === 3) {
       const size = getSizeTrack();
-      const industry = formData.industry;
+      const industry = determinedIndustry;
       const filename = `${size}_${industry}.json`;
       fetch(`/data/${filename}`)
         .then((res) => res.json())
@@ -136,6 +205,17 @@ export default function Home() {
     return count;
   };
 
+  const getIndustryDisplayName = (key: string) => {
+    const names: Record<string, string> = {
+      "services-minor": "Service with Minor Footprint",
+      "services-significant": "Service with Significant Footprint",
+      "manufacturing": "Manufacturing",
+      "wholesale-retail": "Wholesale/Retail",
+      "agriculture": "Agriculture/Growers",
+    };
+    return names[key] || key;
+  };
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-900 via-teal-950 to-slate-900 text-white">
       {/* Form Steps */}
@@ -144,7 +224,7 @@ export default function Home() {
           <div className="w-full max-w-4xl">
             <div className="text-center mb-8">
               <h1 className="text-3xl font-bold mb-2">B Corp Compliance Navigator</h1>
-              <p className="text-teal-300/70">Find out exactly which requirements apply to you.</p>
+              <p className="text-teal-300/70">Find out exactly which requirements apply to your business.</p>
             </div>
 
             <div className="flex gap-6 items-start justify-center">
@@ -200,17 +280,6 @@ export default function Home() {
                       />
                     </div>
 
-                    <button
-                      type="submit"
-                      className="w-full bg-gradient-to-r from-teal-500 to-cyan-500 text-white py-3 rounded-xl font-semibold hover:from-teal-400 hover:to-cyan-400 transition-all duration-300 mt-4"
-                    >
-                      Continue
-                    </button>
-                  </form>
-                )}
-
-                {step === 2 && (
-                  <form onSubmit={nextStep} className="space-y-5">
                     <div>
                       <label htmlFor="employees" className="block text-sm font-medium text-teal-200 mb-2">
                         Number of employees (FTE)
@@ -256,30 +325,172 @@ export default function Home() {
                       </select>
                     </div>
 
-                    <div>
-                      <label htmlFor="industry" className="block text-sm font-medium text-teal-200 mb-2">
-                        Industry
-                      </label>
-                      <select
-                        id="industry"
-                        name="industry"
-                        value={formData.industry}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-teal-400/50 focus:border-transparent transition-all"
-                        required
-                      >
-                        <option value="" className="bg-slate-800">Select...</option>
-                        <option value="manufacturing" className="bg-slate-800">Manufacturing</option>
-                        <option value="wholesale-retail" className="bg-slate-800">Wholesale / Retail</option>
-                        <option value="services-minor" className="bg-slate-800">Services (Minor Footprint)</option>
-                        <option value="services-significant" className="bg-slate-800">Services (Significant Footprint)</option>
-                        <option value="agriculture" className="bg-slate-800">Agriculture / Growers</option>
-                      </select>
-                    </div>
-
                     <button
                       type="submit"
                       className="w-full bg-gradient-to-r from-teal-500 to-cyan-500 text-white py-3 rounded-xl font-semibold hover:from-teal-400 hover:to-cyan-400 transition-all duration-300 mt-4"
+                    >
+                      Continue
+                    </button>
+                  </form>
+                )}
+
+                {step === 2 && (
+                  <form onSubmit={handleSubmitIndustry} className="space-y-5">
+                    <h2 className="text-lg font-semibold text-teal-200 mb-1">Determine your industry category</h2>
+                    <p className="text-sm text-white/60 mb-4">B Lab defines 5 industries within the B Impact Assessment, these categories have a significant impact on compliance requirements and will ensure your assessment is tailored to your impact. </p>
+
+                    {/* Question 1 */}
+                    <div className="space-y-3">
+                      <p className="text-sm text-white/90">
+                        Does your company earn 10% or more of revenue from the sale of physical products?
+                      </p>
+                      <div className="flex gap-3">
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setQ1PhysicalProducts(true);
+                          }}
+                          className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
+                            q1PhysicalProducts === true
+                              ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
+                              : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
+                          }`}
+                        >
+                          Yes
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setQ1PhysicalProducts(false);
+                            setQ3Manufactures(null);
+                            setQ4Agriculture(null);
+                          }}
+                          className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
+                            q1PhysicalProducts === false
+                              ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
+                              : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
+                          }`}
+                        >
+                          No
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* Question 2 - Always shows after Q1 is answered */}
+                    {q1PhysicalProducts !== null && (
+                      <div className="space-y-3 animate-fadeIn">
+                        <p className="text-sm text-white/90">
+                          Does your company own or operate physical locations or industrial equipment (not including an office)?
+                        </p>
+                        <div className="flex gap-3">
+                          <button
+                            type="button"
+                            onClick={() => setQ2PhysicalLocations(true)}
+                            className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
+                              q2PhysicalLocations === true
+                                ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
+                                : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
+                            }`}
+                          >
+                            Yes
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => setQ2PhysicalLocations(false)}
+                            className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
+                              q2PhysicalLocations === false
+                                ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
+                                : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
+                            }`}
+                          >
+                            No
+                          </button>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Question 3 - Shows if Q1 is Yes */}
+                    {showQ3Q4 && (
+                      <div className="space-y-3 animate-fadeIn">
+                        <p className="text-sm text-white/90">
+                          Does the company directly manufacture its own products?
+                        </p>
+                        <div className="flex gap-3">
+                          <button
+                            type="button"
+                            onClick={() => setQ3Manufactures(true)}
+                            className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
+                              q3Manufactures === true
+                                ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
+                                : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
+                            }`}
+                          >
+                            Yes
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => setQ3Manufactures(false)}
+                            className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
+                              q3Manufactures === false
+                                ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
+                                : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
+                            }`}
+                          >
+                            No
+                          </button>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Question 4 - Shows if Q1 is Yes and Q3 has been answered */}
+                    {showQ3Q4 && q3Manufactures !== null && (
+                      <div className="space-y-3 animate-fadeIn">
+                        <p className="text-sm text-white/90">
+                          Does a majority of the company&apos;s revenue come from agricultural products?
+                        </p>
+                        <div className="flex gap-3">
+                          <button
+                            type="button"
+                            onClick={() => setQ4Agriculture(true)}
+                            className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
+                              q4Agriculture === true
+                                ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
+                                : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
+                            }`}
+                          >
+                            Yes
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => setQ4Agriculture(false)}
+                            className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
+                              q4Agriculture === false
+                                ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
+                                : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
+                            }`}
+                          >
+                            No
+                          </button>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Industry Result */}
+                    {determinedIndustry && (
+                      <div className="mt-6 p-4 bg-teal-500/10 border border-teal-400/30 rounded-xl animate-fadeIn">
+                        <p className="text-sm text-teal-300/70">Your industry category:</p>
+                        <p className="text-lg font-semibold text-teal-200">{getIndustryDisplayName(determinedIndustry)}</p>
+                      </div>
+                    )}
+
+                    <button
+                      type="submit"
+                      disabled={!determinedIndustry}
+                      className={`w-full py-3 rounded-xl font-semibold transition-all duration-300 mt-4 ${
+                        determinedIndustry
+                          ? "bg-gradient-to-r from-teal-500 to-cyan-500 text-white hover:from-teal-400 hover:to-cyan-400"
+                          : "bg-white/10 text-white/30 cursor-not-allowed"
+                      }`}
                     >
                       See my requirements
                     </button>
@@ -295,8 +506,8 @@ export default function Home() {
                 )}
               </div>
 
-              {/* FTE Explanation Box - Only shows on step 2 */}
-              {step === 2 && (
+              {/* FTE Explanation Box - Only shows on step 1 now */}
+              {step === 1 && (
                 <div className="w-80 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6">
                   <h3 className="text-sm font-semibold text-teal-200 mb-3">Calculating FTE</h3>
                   <p className="text-xs text-white/60 mb-4">
@@ -487,7 +698,7 @@ export default function Home() {
                           <span className="text-xs text-teal-400 font-mono bg-teal-400/10 px-2 py-1 rounded flex-shrink-0">
                             {criterion.code}
                           </span>
-                          <p className="text-sm leading-relaxed text-white/90">{criterion.text}</p>
+                          <p className="text-sm leading-relaxed text-white/90 whitespace-pre-line">{criterion.text}</p>
                         </div>
                       </div>
                     ))}
