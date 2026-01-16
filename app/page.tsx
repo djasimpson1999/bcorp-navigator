@@ -144,7 +144,7 @@ export default function Home() {
           <div className="w-full max-w-4xl">
             <div className="text-center mb-8">
               <h1 className="text-3xl font-bold mb-2">B Corp Compliance Navigator</h1>
-              <p className="text-teal-300/70">Find out exactly which requirements apply to your business.</p>
+              <p className="text-teal-300/70">Find out exactly which requirements apply to you.</p>
             </div>
 
             <div className="flex gap-6 items-start justify-center">
