@@ -34,11 +34,10 @@ type RequirementsData = {
 };
 
 export default function Home() {
-  const [step, setStep] = useState(1);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [step, setStep] = useState(0);
+  const [experienceLevel, setExperienceLevel] = useState<"new" | "experienced" | null>(null);
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    company: "",
     employees: "",
     revenue: "",
   });
@@ -62,64 +61,48 @@ export default function Home() {
     });
   };
 
-  const nextStep = (e: React.FormEvent) => {
-    e.preventDefault();
-    setStep(step + 1);
-  };
-
   // Determine industry based on answers
   useEffect(() => {
-    // If Q4 is yes at any point, it's agriculture
     if (q4Agriculture === true) {
       setDeterminedIndustry("agriculture");
       return;
     }
 
-    // Q1: No, Q2: No → Services Minor
     if (q1PhysicalProducts === false && q2PhysicalLocations === false) {
       setDeterminedIndustry("services-minor");
       return;
     }
 
-    // Q1: No, Q2: Yes → Services Significant
     if (q1PhysicalProducts === false && q2PhysicalLocations === true) {
       setDeterminedIndustry("services-significant");
       return;
     }
 
-    // Q1: Yes, Q2: No, need Q3 and Q4
     if (q1PhysicalProducts === true && q2PhysicalLocations === false) {
-      // Q3: Yes, Q4: No → Manufacturing
       if (q3Manufactures === true && q4Agriculture === false) {
         setDeterminedIndustry("manufacturing");
         return;
       }
-      // Q3: No, Q4: No → Wholesale/Retail
       if (q3Manufactures === false && q4Agriculture === false) {
         setDeterminedIndustry("wholesale-retail");
         return;
       }
     }
 
-    // Q1: Yes, Q2: Yes, need Q3 and Q4
     if (q1PhysicalProducts === true && q2PhysicalLocations === true) {
-      // Q3: Yes, Q4: No → Manufacturing
       if (q3Manufactures === true && q4Agriculture === false) {
         setDeterminedIndustry("manufacturing");
         return;
       }
-      // Q3: No, Q4: No → Wholesale/Retail
       if (q3Manufactures === false && q4Agriculture === false) {
         setDeterminedIndustry("wholesale-retail");
         return;
       }
     }
 
-    // Not yet determined
     setDeterminedIndustry(null);
   }, [q1PhysicalProducts, q2PhysicalLocations, q3Manufactures, q4Agriculture]);
 
-  // Check if we need to show Q3 and Q4
   const showQ3Q4 = q1PhysicalProducts === true && q2PhysicalLocations !== null;
 
   const getSizeTrack = () => {
@@ -148,15 +131,17 @@ export default function Home() {
       : revenueSize;
   };
 
-  const handleSubmitIndustry = (e: React.FormEvent) => {
+  const canSubmit = determinedIndustry && formData.employees && formData.revenue;
+
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (determinedIndustry) {
-      setStep(3);
+    if (canSubmit) {
+      setStep(2);
     }
   };
 
   useEffect(() => {
-    if (step === 3) {
+    if (step === 2) {
       const size = getSizeTrack();
       const industry = determinedIndustry;
       const filename = `${size}_${industry}.json`;
@@ -164,7 +149,7 @@ export default function Home() {
         .then((res) => res.json())
         .then((data) => {
           setRequirements(data);
-          setTimeout(() => setStep(4), 2500);
+          setTimeout(() => setStep(3), 2500);
         })
         .catch((err) => {
           console.error("Failed to load requirements:", err);
@@ -216,73 +201,232 @@ export default function Home() {
     return names[key] || key;
   };
 
+  const getSizeDisplayName = (key: string) => {
+    const names: Record<string, string> = {
+      "no-workers": "No Workers",
+      "micro": "Micro",
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large",
+      "xlarge": "X-Large",
+      "xxlarge": "XX-Large",
+    };
+    return names[key] || key;
+  };
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-900 via-teal-950 to-slate-900 text-white">
-      {/* Form Steps */}
-      {step < 4 && (
-        <div className="min-h-screen flex items-center justify-center px-4">
-          <div className="w-full max-w-4xl">
+           
+            {/* Experience Level Step */}
+      {step === 0 && (
+        <div className={`min-h-screen flex items-center justify-center px-4 py-12 transition-all duration-400 ${isTransitioning ? "opacity-0 -translate-y-8" : "opacity-100 translate-y-0"}`}>
+          <div className="w-full max-w-xl">
             <div className="text-center mb-8">
               <h1 className="text-3xl font-bold mb-2">B Corp Compliance Navigator</h1>
               <p className="text-teal-300/70">Find out exactly which requirements apply to your business.</p>
             </div>
 
-            <div className="flex gap-6 items-start justify-center">
-              {/* Main Form Card */}
-              <div className="w-full max-w-md bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8">
-                {step === 1 && (
-                  <form onSubmit={nextStep} className="space-y-5">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-teal-200 mb-2">
-                        Your name
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-teal-400/50 focus:border-transparent transition-all"
-                        placeholder="John Smith"
-                        required
-                      />
-                    </div>
+            <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8">
+              <h2 className="text-lg font-semibold text-teal-200 mb-6 text-center">
+                How familiar are you with B Corp and the B Impact Assessment?
+              </h2>
 
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-teal-200 mb-2">
-                        Email address
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-teal-400/50 focus:border-transparent transition-all"
-                        placeholder="john@company.com"
-                        required
-                      />
-                    </div>
+              <div className="flex gap-4">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setExperienceLevel("new");
+                    setIsTransitioning(true);
+                    setTimeout(() => {
+                      setStep(1);
+                      setIsTransitioning(false);
+                    }, 400);
+                  }}
+                  className="flex-1 py-4 px-6 rounded-xl border bg-white/5 border-white/10 text-white/90 hover:bg-teal-500/20 hover:border-teal-400/50 hover:text-teal-200 transition-all duration-200"
+                >
+                  <span className="block font-medium mb-1">I am new to B Corp</span>
+                </button>
 
-                    <div>
-                      <label htmlFor="company" className="block text-sm font-medium text-teal-200 mb-2">
-                        Company name
-                      </label>
-                      <input
-                        type="text"
-                        id="company"
-                        name="company"
-                        value={formData.company}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-teal-400/50 focus:border-transparent transition-all"
-                        placeholder="Acme Ltd"
-                        required
-                      />
-                    </div>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setExperienceLevel("experienced");
+                     setIsTransitioning(true);
+                    setTimeout(() => {
+                      setStep(1);
+                      setIsTransitioning(false);
+                    }, 400);
+                   }}
+                  className="flex-1 py-4 px-6 rounded-xl border bg-white/5 border-white/10 text-white/90 hover:bg-teal-500/20 hover:border-teal-400/50 hover:text-teal-200 transition-all duration-200"
+                >
+                  <span className="block font-medium mb-1">I've engaged with B Corp before</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
+      {/* Form Step */}
+      {step === 1 && (
+        <div className="min-h-screen flex items-center justify-center px-4 py-12 animate-slideUp">
+          <div className="w-full max-w-5xl">
+
+            <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+              {/* Industry Category Box */}
+              <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8">
+                <h2 className="text-lg font-semibold text-teal-200 mb-1">Industry Category</h2>
+                <p className="text-sm text-white/60 mb-6">B Lab places companies into one of the five industry categories they have defined to ensure that the assessment is appropriate for the nature of your business.<br></br><br></br>The questions below will determine which industry category applies to your business.</p>
+
+                <div className="space-y-5">
+                  {/* Question 1 */}
+                  <div className="space-y-3">
+                    <p className="text-sm text-white/90">
+                      Does your company earn 10% or more of revenue from the sale of physical products?
+                    </p>
+                    <div className="flex gap-3">
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setQ1PhysicalProducts(true);
+                        }}
+                        className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
+                          q1PhysicalProducts === true
+                            ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
+                            : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
+                        }`}
+                      >
+                        Yes
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setQ1PhysicalProducts(false);
+                          setQ3Manufactures(null);
+                          setQ4Agriculture(null);
+                        }}
+                        className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
+                          q1PhysicalProducts === false
+                            ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
+                            : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
+                        }`}
+                      >
+                        No
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Question 2 */}
+                  {q1PhysicalProducts !== null && (
+                    <div className="space-y-3 animate-fadeIn">
+                      <p className="text-sm text-white/90">
+                        Does your company own or operate physical locations or industrial equipment (not including an office)?
+                      </p>
+                      <div className="flex gap-3">
+                        <button
+                          type="button"
+                          onClick={() => setQ2PhysicalLocations(true)}
+                          className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
+                            q2PhysicalLocations === true
+                              ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
+                              : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
+                          }`}
+                        >
+                          Yes
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setQ2PhysicalLocations(false)}
+                          className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
+                            q2PhysicalLocations === false
+                              ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
+                              : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
+                          }`}
+                        >
+                          No
+                        </button>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Question 3 */}
+                  {showQ3Q4 && (
+                    <div className="space-y-3 animate-fadeIn">
+                      <p className="text-sm text-white/90">
+                        Does the company directly manufacture its own products?
+                      </p>
+                      <div className="flex gap-3">
+                        <button
+                          type="button"
+                          onClick={() => setQ3Manufactures(true)}
+                          className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
+                            q3Manufactures === true
+                              ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
+                              : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
+                          }`}
+                        >
+                          Yes
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setQ3Manufactures(false)}
+                          className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
+                            q3Manufactures === false
+                              ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
+                              : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
+                          }`}
+                        >
+                          No
+                        </button>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Question 4 */}
+                  {showQ3Q4 && q3Manufactures !== null && (
+                    <div className="space-y-3 animate-fadeIn">
+                      <p className="text-sm text-white/90">
+                        Does a majority of the company&apos;s revenue come from agricultural products?
+                      </p>
+                      <div className="flex gap-3">
+                        <button
+                          type="button"
+                          onClick={() => setQ4Agriculture(true)}
+                          className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
+                            q4Agriculture === true
+                              ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
+                              : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
+                          }`}
+                        >
+                          Yes
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setQ4Agriculture(false)}
+                          className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
+                            q4Agriculture === false
+                              ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
+                              : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
+                          }`}
+                        >
+                          No
+                        </button>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* Size Box */}
+              <div className={`flex gap-6 transition-all duration-500 ${determinedIndustry ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"}`}>
+                <div className="flex-1 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8">
+                  <h2 className="text-lg font-semibold text-teal-200 mb-1">Size</h2>
+                  <p className="text-sm text-white/60 mb-6">Your size track is determined by the lower of your employee count or revenue band.</p>
+
+                  <div className="space-y-5">
                     <div>
                       <label htmlFor="employees" className="block text-sm font-medium text-teal-200 mb-2">
-                        Number of employees (FTE)
+                        Number of employees (Full Time Equivalent)
                       </label>
                       <select
                         id="employees"
@@ -324,194 +468,14 @@ export default function Home() {
                         <option value="over-1.5b" className="bg-slate-800">Over $1.5b</option>
                       </select>
                     </div>
-
-                    <button
-                      type="submit"
-                      className="w-full bg-gradient-to-r from-teal-500 to-cyan-500 text-white py-3 rounded-xl font-semibold hover:from-teal-400 hover:to-cyan-400 transition-all duration-300 mt-4"
-                    >
-                      Continue
-                    </button>
-                  </form>
-                )}
-
-                {step === 2 && (
-                  <form onSubmit={handleSubmitIndustry} className="space-y-5">
-                    <h2 className="text-lg font-semibold text-teal-200 mb-1">Determine your industry category</h2>
-                    <p className="text-sm text-white/60 mb-4">B Lab defines 5 industries within the B Impact Assessment, these categories have a significant impact on compliance requirements and will ensure your assessment is tailored to your impact. </p>
-
-                    {/* Question 1 */}
-                    <div className="space-y-3">
-                      <p className="text-sm text-white/90">
-                        Does your company earn 10% or more of revenue from the sale of physical products?
-                      </p>
-                      <div className="flex gap-3">
-                        <button
-                          type="button"
-                          onClick={() => {
-                            setQ1PhysicalProducts(true);
-                          }}
-                          className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
-                            q1PhysicalProducts === true
-                              ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
-                              : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
-                          }`}
-                        >
-                          Yes
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => {
-                            setQ1PhysicalProducts(false);
-                            setQ3Manufactures(null);
-                            setQ4Agriculture(null);
-                          }}
-                          className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
-                            q1PhysicalProducts === false
-                              ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
-                              : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
-                          }`}
-                        >
-                          No
-                        </button>
-                      </div>
-                    </div>
-
-                    {/* Question 2 - Always shows after Q1 is answered */}
-                    {q1PhysicalProducts !== null && (
-                      <div className="space-y-3 animate-fadeIn">
-                        <p className="text-sm text-white/90">
-                          Does your company own or operate physical locations or industrial equipment (not including an office)?
-                        </p>
-                        <div className="flex gap-3">
-                          <button
-                            type="button"
-                            onClick={() => setQ2PhysicalLocations(true)}
-                            className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
-                              q2PhysicalLocations === true
-                                ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
-                                : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
-                            }`}
-                          >
-                            Yes
-                          </button>
-                          <button
-                            type="button"
-                            onClick={() => setQ2PhysicalLocations(false)}
-                            className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
-                              q2PhysicalLocations === false
-                                ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
-                                : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
-                            }`}
-                          >
-                            No
-                          </button>
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Question 3 - Shows if Q1 is Yes */}
-                    {showQ3Q4 && (
-                      <div className="space-y-3 animate-fadeIn">
-                        <p className="text-sm text-white/90">
-                          Does the company directly manufacture its own products?
-                        </p>
-                        <div className="flex gap-3">
-                          <button
-                            type="button"
-                            onClick={() => setQ3Manufactures(true)}
-                            className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
-                              q3Manufactures === true
-                                ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
-                                : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
-                            }`}
-                          >
-                            Yes
-                          </button>
-                          <button
-                            type="button"
-                            onClick={() => setQ3Manufactures(false)}
-                            className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
-                              q3Manufactures === false
-                                ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
-                                : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
-                            }`}
-                          >
-                            No
-                          </button>
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Question 4 - Shows if Q1 is Yes and Q3 has been answered */}
-                    {showQ3Q4 && q3Manufactures !== null && (
-                      <div className="space-y-3 animate-fadeIn">
-                        <p className="text-sm text-white/90">
-                          Does a majority of the company&apos;s revenue come from agricultural products?
-                        </p>
-                        <div className="flex gap-3">
-                          <button
-                            type="button"
-                            onClick={() => setQ4Agriculture(true)}
-                            className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
-                              q4Agriculture === true
-                                ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
-                                : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
-                            }`}
-                          >
-                            Yes
-                          </button>
-                          <button
-                            type="button"
-                            onClick={() => setQ4Agriculture(false)}
-                            className={`flex-1 py-2 px-4 rounded-xl border transition-all duration-200 ${
-                              q4Agriculture === false
-                                ? "bg-teal-500/20 border-teal-400/50 text-teal-200"
-                                : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10"
-                            }`}
-                          >
-                            No
-                          </button>
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Industry Result */}
-                    {determinedIndustry && (
-                      <div className="mt-6 p-4 bg-teal-500/10 border border-teal-400/30 rounded-xl animate-fadeIn">
-                        <p className="text-sm text-teal-300/70">Your industry category:</p>
-                        <p className="text-lg font-semibold text-teal-200">{getIndustryDisplayName(determinedIndustry)}</p>
-                      </div>
-                    )}
-
-                    <button
-                      type="submit"
-                      disabled={!determinedIndustry}
-                      className={`w-full py-3 rounded-xl font-semibold transition-all duration-300 mt-4 ${
-                        determinedIndustry
-                          ? "bg-gradient-to-r from-teal-500 to-cyan-500 text-white hover:from-teal-400 hover:to-cyan-400"
-                          : "bg-white/10 text-white/30 cursor-not-allowed"
-                      }`}
-                    >
-                      See my requirements
-                    </button>
-                  </form>
-                )}
-
-                {step === 3 && (
-                  <div className="text-center py-8">
-                    <div className="inline-block w-14 h-14 border-4 border-teal-500/30 border-t-teal-400 rounded-full animate-spin mb-6"></div>
-                    <p className="text-white font-medium mb-2">Analysing your requirements...</p>
-                    <p className="text-teal-300/50 text-sm">Cross-referencing B Corp v2.1 standards</p>
                   </div>
-                )}
-              </div>
+                </div>
 
-              {/* FTE Explanation Box - Only shows on step 1 now */}
-              {step === 1 && (
+                {/* FTE Explanation Box */}
                 <div className="w-80 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6">
-                  <h3 className="text-sm font-semibold text-teal-200 mb-3">Calculating FTE</h3>
+                  <h3 className="text-sm font-semibold text-teal-200 mb-3">Calculating Full Time Equivalent (FTE)</h3>
                   <p className="text-xs text-white/60 mb-4">
-                    B Lab uses a simplified system for calculating the Full Time Equivalent size of your workforce. They do not use precise FTE calculations:
+                    B Lab uses a simplified system for calculating the FTE size of your workforce. This will <u>not</u> match your own precise FTE calculations.
                   </p>
                   <table className="w-full text-xs">
                     <thead>
@@ -546,22 +510,48 @@ export default function Home() {
                     </tbody>
                   </table>
                 </div>
-              )}
+              </div>
+
+              {/* Submit Button */}
+              <button
+                type="submit"
+                disabled={!canSubmit}
+                className={`w-full py-3 rounded-xl font-semibold transition-all duration-300 ${
+                  canSubmit
+                    ? "bg-gradient-to-r from-teal-500 to-cyan-500 text-white hover:from-teal-400 hover:to-cyan-400"
+                    : "bg-white/10 text-white/30 cursor-not-allowed"
+                }`}
+              >
+                See my requirements
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
+
+      {/* Loading Step */}
+      {step === 2 && (
+        <div className="min-h-screen flex items-center justify-center px-4">
+          <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8">
+            <div className="text-center py-8">
+              <div className="inline-block w-14 h-14 border-4 border-teal-500/30 border-t-teal-400 rounded-full animate-spin mb-6"></div>
+              <p className="text-white font-medium mb-2">Analysing your requirements...</p>
+              <p className="text-teal-300/50 text-sm">Cross-referencing B Corp v2.1 standards</p>
             </div>
           </div>
         </div>
       )}
 
       {/* Results View */}
-      {step === 4 && requirements && (
+      {step === 3 && requirements && (
         <div className="min-h-screen flex flex-col">
           {/* Header */}
           <header className="px-6 py-4 border-b border-white/10 bg-black/20 backdrop-blur-sm">
             <div className="flex items-center justify-between">
               <div>
-                <h1 className="text-xl font-bold">{formData.company}</h1>
+                <h1 className="text-xl font-bold">Your Requirements</h1>
                 <p className="text-teal-300/70 text-sm">
-                  {requirements.totalCriteria} compliance criteria across {requirements.impactTopics.length} impact topics
+                  {getIndustryDisplayName(determinedIndustry || "")} · {getSizeDisplayName(getSizeTrack())} · {requirements.totalCriteria} compliance criteria across {requirements.impactTopics.length} impact topics
                 </p>
               </div>
               <button className="bg-gradient-to-r from-teal-500 to-cyan-500 text-white px-5 py-2 rounded-lg font-medium hover:from-teal-400 hover:to-cyan-400 transition-all duration-300 text-sm">
@@ -706,7 +696,6 @@ export default function Home() {
                 </div>
               )}
 
-              {/* Empty state when no sub-requirement selected */}
               {!selectedSubReq && selectedReq && (
                 <div className="h-full flex items-center justify-center text-white/30">
                   <p>Select a sub-requirement to view criteria</p>
